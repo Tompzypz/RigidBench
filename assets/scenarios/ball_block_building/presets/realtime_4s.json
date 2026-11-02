@@ -1,0 +1,15 @@
+{
+  "physics": {
+    "ball_initial_location": [-1.12, 0.0, 0.7802],
+    "ball_speed": 0.85,
+    "ball_mass": 1.0,
+    "table_friction": 0.3,
+    "block_friction": 0.3
+  },
+  "render": {
+    "fps": 24,
+    "duration_sec": 4.0,
+    "slow_motion": 1,
+    "resolution": [1280, 720]
+  }
+}

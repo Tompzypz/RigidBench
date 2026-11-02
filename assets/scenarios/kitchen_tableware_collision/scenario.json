@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "scene": "kitchen_tableware_collision",
+  "seed": 0,
+  "physics": {
+    "driver_mass": 0.28,
+    "receiver_mass": 0.28,
+    "initial_velocity": 0.72,
+    "receiver_initial_velocity": 0.0,
+    "restitution": 0.68,
+    "receiver_active": [
+      1
+    ]
+  },
+  "render": {
+    "fps": 24,
+    "duration_sec": 4.0,
+    "slow_motion": 1,
+    "resolution": [
+      960,
+      540
+    ],
+    "samples": 48
+  },
+  "camera": {
+    "location": [
+      0.35,
+      -1.85,
+      1.64
+    ],
+    "target": [
+      0.08,
+      0.18,
+      1.15
+    ],
+    "lens_mm": 38
+  }
+}

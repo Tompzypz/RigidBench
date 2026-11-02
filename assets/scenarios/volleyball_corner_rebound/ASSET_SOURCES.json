@@ -1,0 +1,56 @@
+{
+  "volleyball": {
+    "source": "User-provided new-scripts/models/volleyball.glb",
+    "local_copy": "new-scripts/models/volleyball.glb",
+    "note": "Existing user-provided project asset; source attribution and license remain those of the original asset. No download."
+  },
+  "room": {
+    "source": "Locally authored metre-scale architecture, plaster materials and decorative geometry in scene_environment.py",
+    "reference": "Existing scripts/models/cloe_room.glb and scripts scene organization were reviewed; the room GLB is not loaded by this scene. Cabinet, books and ceramic vase are locally authored."
+  },
+  "current_floor": {
+    "source": "scripts/newtons_cradle/assets/wood_floor_worn_diff_2k.jpg",
+    "local_copy": "new-scripts/models/volleyball_corner/wood_floor_worn_diff_2k.jpg",
+    "description": "Restore the original photographed worn oak floor texture and original floor_material shader; locally copied asset.",
+    "sha256": "aff7c4037c3d4d900d2702d9f676ea86338099e98f69fc91b3e3c5de9f488cbf"
+  },
+  "foliage": {
+    "source": "User-provided new-scripts/models/fiddle_leaf_fig.glb",
+    "local_path": "new-scripts/models/fiddle_leaf_fig.glb",
+    "note": "Uses the existing model and original materials. Asset rights and attribution remain those of the supplied original.",
+    "in_use": false,
+    "note_usage": "No longer loaded: the corner the ball rebounds into is left empty, so the scene builds no planter and imports no foliage."
+  },
+  "paintings": {
+    "source": "..\\scripts\\models\\cafe_wall_pictures.glb",
+    "local_copy": "models\\cafe_wall_pictures.glb",
+    "sha256": "e598eb7202ddca71d1379c7f1a52a827e763a394626915f5200e2fc4ecd1bee2",
+    "transform": "Uniform scale and rigid rotation only; original mesh proportions and textures retained",
+    "variants_in_file": ["wall_picture_1", "wall_picture_2", "wall_picture_3"],
+    "variant_used": "wall_picture_2",
+    "note": "The glb stacks three pictures on one shared 0.49 x 0.33 m mesh that differ only in texture. wall_picture_2, a copper mug on a flat blush ground, is the one hung on the left wall: at the ~30 px the comparison camera gives it, wall_picture_1's dark still life turns into a brown smudge and wall_picture_3's cream ground disappears into the plaster. Uniform scale and rigid rotation preserve the supplied proportions and textures."
+  },
+  "air_conditioner": {
+    "source": "User-provided assets/models/indoor_air_conditioner_unit.glb",
+    "local_copy": "models/indoor_air_conditioner_unit.glb",
+    "sha256": "a12a839ea134576bb86b17ffff093456a593dad7cca0a8470df91c2739ea0c6c",
+    "transform": "Uniform scale 2.26 (0.531 x 0.131 x 0.181 m as supplied, 1.20 wide x 0.41 high x 0.30 deep as hung, a 3 HP size for a 240 m3 room), quarter turn about Z so the louvre faces into the room, back face 6 mm off the x=0 plaster, underside 2.40 m up and 0.90 m clear of the window's right reveal at y=3.2 m (y 4.10-5.30, top of case 2.81 m, 0.19 m below the ceiling)",
+    "material_change": "Metallic pinned to 0: the packed metallic channel reads 0.91 across the painted shell, which under this overcast HDR renders the unit as a blue-grey mirror instead of painted steel. Roughness still comes from the supplied map.",
+    "note": "Wall-mounted split indoor unit on the window wall, the one the camera sees most squarely: on the y=0 wall its face was foreshortened to 0.56 of its length (projected aspect 2.42 against a true 2.93), on x=0 seen from this camera it keeps 0.95 and projects at 2.89. It is a real static box collider in the simulator; the closest any trajectory comes is recorded per case as min_air_conditioner_clearance_m. Asset rights and attribution remain those of the supplied original."
+  },
+  "daylight_environment": {
+    "source": "scripts/_neat_probe/assets/overcast_industrial_courtyard_4k.hdr",
+    "local_copy": "new-scripts/models/volleyball_corner/overcast_industrial_courtyard_4k.hdr",
+    "note": "Existing project HDR copied locally before use; visible through real wall aperture and clear non-emissive glazing.",
+    "sha256": "b2c437821433eb4926a47ae913d73894b12d78a336748f2aea242429026f6eea"
+  },
+  "wood_floor_texture": {
+    "source": "scripts/newtons_cradle/assets/wood_floor_worn_diff_2k.jpg",
+    "local_copy": "new-scripts/models/volleyball_corner/wood_floor_worn_diff_2k.jpg",
+    "note": "Existing project texture, documented by the original scenes as Poly Haven wood_floor_worn. No download."
+  },
+  "spare_volleyballs": {
+    "source": "models/volleyball.glb",
+    "note": "Two static, standard-radius instances of the same local volleyball model; original materials retained; collision spheres match the visual size."
+  }
+}

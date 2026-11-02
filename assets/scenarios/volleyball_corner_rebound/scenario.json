@@ -1,0 +1,26 @@
+{
+  "scene": "volleyball_corner_rebound",
+  "description": "An airborne volleyball is thrown diagonally down into a room corner; gravity, wall and floor friction generate rebounds and spin.",
+  "assets": {"ball": "volleyball.glb", "floor": "wood_floor_worn_diff_2k.jpg", "paintings": "cafe_wall_pictures.glb",
+   "air_conditioner": "indoor_air_conditioner_unit.glb"},
+  "physics": {
+    "fps": 24, "duration_sec": 4.0, "substeps_per_frame": 60,
+    "gravity_z": -9.81, "room_size": [10.0, 8.0, 3.0],
+    "ball_mass": 0.27, "ball_radius": 0.105,
+    "ball_initial_location": [4.80, 4.50, 2.30],
+    "ball_initial_speed": 5.85, "launch_direction": [-4.80, -3.20, -0.96],
+    "ball_initial_angular_velocity": [0.0, 0.0, 0.0],
+    "ball_restitution": 0.78, "ball_friction": 0.55,
+    "ball_rolling_friction": 0.002, "ball_spinning_friction": 0.0001,
+    "floor_friction": 0.5, "floor_rolling_friction": 0.002,
+    "floor_restitution": 0.85, "wall_friction": 0.35,
+    "wall_restitution": 1.0, "linear_damping": 0.008, "angular_damping": 0.008
+  },
+  "render": {
+    "camera_location": [5.8, 5.8, 2.75], "camera_target": [2.0, 2.5, 1.05],
+    "camera_mode": "fixed", "tracking_smoothing": 0.65,
+    "tracking_hold_sec": 0.0, "tracking_blend_sec": 0.01,
+    "adaptive_lens": false,
+    "lens_mm": 30.0, "exposure": 0.55, "resolution": [960, 540], "samples": 16
+  }
+}

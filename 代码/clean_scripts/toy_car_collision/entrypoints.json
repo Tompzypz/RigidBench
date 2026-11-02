@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "scene": "toy_car_collision",
+  "category": "rigid_rigid",
+  "entrypoints": {
+    "simulate": {
+      "file": "simulate_toy_car_collision.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out",
+        "filename": "simulation.json"
+      },
+      "native_options": [
+        "--out",
+        "--scenario-json",
+        "--scenario-overrides-json",
+        "--fps",
+        "--duration-sec",
+        "--slow-motion"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": []
+    },
+    "render": {
+      "file": "render_toy_car_collision.py",
+      "runtime": "blender",
+      "output": {
+        "flag": "--out-dir"
+      },
+      "native_options": [
+        "--out",
+        "--out-dir",
+        "--physics-json",
+        "--physics-python",
+        "--engine",
+        "--device",
+        "--samples",
+        "--resolution",
+        "--mode",
+        "--preview-frame",
+        "--closeup",
+        "--keyframes",
+        "--scenario-json",
+        "--scenario-overrides-json",
+        "--fps",
+        "--duration-sec",
+        "--slow-motion"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": []
+    },
+    "build_pcve": {
+      "file": "build_pcve_toy_car_collision.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out-root"
+      },
+      "native_options": [
+        "--out",
+        "--scenario-json",
+        "--physics-json",
+        "--out-dir",
+        "--engine",
+        "--device",
+        "--samples",
+        "--resolution",
+        "--mode",
+        "--keyframes",
+        "--out-root",
+        "--physics-python",
+        "--render-python",
+        "--blender",
+        "--duration-sec",
+        "--fps",
+        "--slow-motion",
+        "--preview-frame",
+        "--simulate-only",
+        "--render-only",
+        "--skip-existing",
+        "--dry-run",
+        "--verbose-render",
+        "--cases",
+        "--scenario-overrides-json"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {
+        "blender": "--blender"
+      },
+      "cases": [
+        "toy_car_collision_baseline",
+        "edit_driver_mass_x3",
+        "edit_driver_speed_x3",
+        "edit_driver_friction_quarter",
+        "edit_delete_receiver",
+        "edit_receiver_speed_boost_timed"
+      ]
+    }
+  },
+  "workflows": {},
+  "implementation_policy": "Scene physics, geometry, rendering and helper modules are included in the seven scene files; only reference common scripts and repository assets are external.",
+  "implementation_files": [
+    "batch_render_toy_car_collision.py",
+    "build_pcve_toy_car_collision.py",
+    "edit_vocab.py",
+    "render_toy_car_collision.py",
+    "simulate_toy_car_collision.py"
+  ],
+  "external_dependencies": {
+    "shared_scripts": [
+      "clean_scripts/pcve_edit_dsl.py"
+    ],
+    "assets": [
+      "assets/"
+    ]
+  }
+}

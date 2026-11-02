@@ -1,0 +1,23 @@
+[
+  {
+    "name": "futuristic_room.glb",
+    "source": "D:\\Desktop\\课题组\\视频编辑模型\\PCVE-RigidBench-main - 副本（10.14）\\PCVE-RigidBench-main\\scripts\\models\\futuristic_room.glb",
+    "local_copy": "D:\\Desktop\\课题组\\视频编辑模型\\PCVE-RigidBench-main - 副本（10.14）\\PCVE-RigidBench-main\\new-scripts\\models\\futuristic_room.glb",
+    "sha256": "0d3548c13524cf13b8e0b8641003da24642e0a693d5d6486b1b2acebdf25e548",
+    "provenance": "Unmodified local copy of the user-supplied adjacent scripts/models asset."
+  },
+  {
+    "name": "hotwheels_technetium__www.vecarz.com.glb",
+    "source": "D:\\Desktop\\课题组\\视频编辑模型\\PCVE-RigidBench-main - 副本（10.14）\\PCVE-RigidBench-main\\scripts\\models\\hotwheels_technetium__www.vecarz.com.glb",
+    "local_copy": "D:\\Desktop\\课题组\\视频编辑模型\\PCVE-RigidBench-main - 副本（10.14）\\PCVE-RigidBench-main\\new-scripts\\models\\hotwheels_technetium__www.vecarz.com.glb",
+    "sha256": "1b723b8322433a7ad02b7513e0a48f448cad3b3a82d1881dc71efd5af0bcdd15",
+    "provenance": "Unmodified local copy of the user-supplied adjacent scripts/models asset."
+  },
+  {
+    "name": "cartoonish_toy_car.glb",
+    "source": "D:\\Desktop\\课题组\\视频编辑模型\\PCVE-RigidBench-main - 副本（10.14）\\PCVE-RigidBench-main\\scripts\\models\\cartoonish_toy_car.glb",
+    "local_copy": "D:\\Desktop\\课题组\\视频编辑模型\\PCVE-RigidBench-main - 副本（10.14）\\PCVE-RigidBench-main\\new-scripts\\models\\cartoonish_toy_car.glb",
+    "sha256": "cc9ee7b1690b0b4dc20dbc241759997b456c620320f5fad25ed03724dbe3a013",
+    "provenance": "Unmodified local copy of the user-supplied adjacent scripts/models asset."
+  }
+]

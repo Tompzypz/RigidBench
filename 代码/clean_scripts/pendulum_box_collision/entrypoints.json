@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "scene": "pendulum_box_collision",
+  "category": "rigid_rigid",
+  "entrypoints": {
+    "simulate": {
+      "file": "simulate_pendulum_box_collision.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out",
+        "filename": "physics_transforms.json"
+      },
+      "native_options": [
+        "--out",
+        "--scenario-json",
+        "--scenario-overrides-json",
+        "--fps",
+        "--duration-sec",
+        "--slow-motion"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [
+        "pendulum_box_collision_baseline",
+        "edit_heavy_bob",
+        "edit_still_bob",
+        "edit_heavy_block",
+        "edit_fast_block",
+        "edit_soft_bounce_timed"
+      ]
+    },
+    "render": {
+      "file": "render_pendulum_box_collision.py",
+      "runtime": "blender",
+      "output": {
+        "flag": "--out-dir"
+      },
+      "native_options": [
+        "--out-dir",
+        "--physics-json",
+        "--scenario-json",
+        "--scenario-overrides-json",
+        "--physics-python",
+        "--fps",
+        "--duration-sec",
+        "--slow-motion",
+        "--samples",
+        "--resolution",
+        "--engine",
+        "--device",
+        "--mode",
+        "--preview-frame",
+        "--frame-count",
+        "--frame-indices",
+        "--out"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [
+        "pendulum_box_collision_baseline",
+        "edit_heavy_bob",
+        "edit_still_bob",
+        "edit_heavy_block",
+        "edit_fast_block",
+        "edit_soft_bounce_timed"
+      ]
+    },
+    "build_pcve": {
+      "file": "build_pcve_pendulum_box_collision.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out-root"
+      },
+      "native_options": [
+        "--out-root",
+        "--physics-python",
+        "--render-python",
+        "--blender",
+        "--duration-sec",
+        "--fps",
+        "--slow-motion",
+        "--samples",
+        "--resolution",
+        "--engine",
+        "--device",
+        "--mode",
+        "--simulate-only",
+        "--render-only",
+        "--skip-existing",
+        "--cases",
+        "--dry-run",
+        "--verbose-render",
+        "--clean-stale-cases",
+        "--out",
+        "--scenario-json",
+        "--physics-json",
+        "--out-dir"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [
+        "pendulum_box_collision_baseline",
+        "edit_heavy_bob",
+        "edit_still_bob",
+        "edit_heavy_block",
+        "edit_fast_block",
+        "edit_soft_bounce_timed"
+      ]
+    }
+  },
+  "workflows": {},
+  "implementation_policy": "Scene physics, geometry, rendering and helper modules are included in the seven scene files; only reference common scripts and repository assets are external.",
+  "implementation_files": [
+    "batch_render_pendulum_box_collision.py",
+    "build_pcve_pendulum_box_collision.py",
+    "edit_vocab.py",
+    "render_pendulum_box_collision.py",
+    "simulate_pendulum_box_collision.py"
+  ],
+  "external_dependencies": {
+    "shared_scripts": [
+      "clean_scripts/pcve_edit_dsl.py"
+    ],
+    "assets": [
+      "assets/"
+    ]
+  }
+}

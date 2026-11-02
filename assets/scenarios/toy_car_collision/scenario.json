@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "scene": "toy_car_collision",
+  "seed": 0,
+  "physics": {
+    "driver_mass": 0.065,
+    "receiver_mass": 0.11,
+    "initial_velocity": 0.95,
+    "driver_friction": 0.12,
+    "receiver_friction": 0.14,
+    "present": [
+      1,
+      1
+    ]
+  },
+  "render": {
+    "fps": 24,
+    "duration_sec": 4.0,
+    "slow_motion": 1,
+    "resolution": [
+      960,
+      540
+    ],
+    "samples": 48
+  },
+  "camera": {
+    "location": [
+      -0.25,
+      -1.6,
+      0.7
+    ],
+    "target": [
+      0.6,
+      0.0,
+      0.04
+    ],
+    "lens_mm": 23
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "scene": "toy_car_bottle",
+  "category": "rigid_rigid",
+  "entrypoints": {
+    "simulate": {
+      "file": "simulate_toy_car_bottle.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out",
+        "filename": "physics_transforms.json"
+      },
+      "native_options": [
+        "--out",
+        "--scenario-overrides-json",
+        "--fps",
+        "--duration-sec"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": []
+    },
+    "render": {
+      "file": "render_toy_car_bottle.py",
+      "runtime": "blender",
+      "output": {
+        "flag": "--out-dir"
+      },
+      "native_options": [
+        "--mode",
+        "--out-dir",
+        "--models-dir",
+        "--scenario-overrides-json",
+        "--physics-python",
+        "--resolution",
+        "--fps",
+        "--duration-sec",
+        "--samples",
+        "--frames",
+        "--end-frame",
+        "--out"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": []
+    },
+    "build_pcve": {
+      "file": "build_pcve_toy_car_bottle.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out-root"
+      },
+      "native_options": [],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [
+        "toy_car_bottle_baseline",
+        "edit_heavy_bottle",
+        "edit_fast_car",
+        "edit_slippery_bottle",
+        "edit_add_midpoint_bottle",
+        "edit_fast_car_midflight"
+      ]
+    }
+  },
+  "workflows": {},
+  "implementation_policy": "Scene physics and render logic are contained in the seven scene files; only reference common scripts and repository assets are external.",
+  "implementation_files": [
+    "batch_render_toy_car_bottle.py",
+    "build_pcve_toy_car_bottle.py",
+    "edit_vocab.py",
+    "render_toy_car_bottle.py",
+    "simulate_toy_car_bottle.py"
+  ],
+  "external_dependencies": {
+    "shared_scripts": [
+      "clean_scripts/pcve_edit_dsl.py"
+    ],
+    "assets": [
+      "assets/models/",
+      "assets/scenarios/toy_car_bottle/"
+    ]
+  },
+  "bundled_support": []
+}

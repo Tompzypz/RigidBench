@@ -1,0 +1,102 @@
+{
+  "provider": "Poly Haven",
+  "license": "CC0",
+  "license_url": "https://polyhaven.com/license",
+  "source_pages": [
+    "https://polyhaven.com/a/floor_pebbles_01",
+    "https://polyhaven.com/a/grass_ground",
+    "https://polyhaven.com/a/dirt_floor"
+  ],
+  "files": [
+    {
+      "file": "dirt_floor_ao_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/dirt_floor/dirt_floor_ao_2k.jpg",
+      "bytes": 2781172,
+      "sha256": "3fa4e877751f8f20a255e60df897b85ae3d066d334c6a6cee63e3aa9a7d6b6be"
+    },
+    {
+      "file": "dirt_floor_diff_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/dirt_floor/dirt_floor_diff_2k.jpg",
+      "bytes": 3944426,
+      "sha256": "1afaf974bc016e5019f48f6590a53e3e3730f48ae2eb5a1717519ad89038f661"
+    },
+    {
+      "file": "dirt_floor_disp_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/dirt_floor/dirt_floor_disp_2k.jpg",
+      "bytes": 1552069,
+      "sha256": "51ec6654074625a205f29e07e4c928ebfa5a892036303b6eb921c2791cc88403"
+    },
+    {
+      "file": "dirt_floor_nor_gl_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/dirt_floor/dirt_floor_nor_gl_2k.jpg",
+      "bytes": 4977831,
+      "sha256": "da70ddc5c7d53d905d842ec189afbf7e2a7da84f281e94041346829b65f29786"
+    },
+    {
+      "file": "dirt_floor_rough_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/dirt_floor/dirt_floor_rough_2k.jpg",
+      "bytes": 1808214,
+      "sha256": "56d3faa1f0624c3e366d057596f50fe3264415a64c967830f61ca139b9a94bfc"
+    },
+    {
+      "file": "floor_pebbles_01_ao_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/floor_pebbles_01/floor_pebbles_01_ao_2k.jpg",
+      "bytes": 1413208,
+      "sha256": "3cb24be5c139e2da92bd26d919fa6a3499d6ba82cf0e4666ac25e4fc1923ea99"
+    },
+    {
+      "file": "floor_pebbles_01_diff_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/floor_pebbles_01/floor_pebbles_01_diff_2k.jpg",
+      "bytes": 2227964,
+      "sha256": "2ae79eca983e17255455af66fe35f64fe408bebe32a1e60f6a84dcaf4eb3596c"
+    },
+    {
+      "file": "floor_pebbles_01_disp_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/floor_pebbles_01/floor_pebbles_01_disp_2k.jpg",
+      "bytes": 651019,
+      "sha256": "0e323eb572769f1cb2a17b1b9ae3c071ad457603ec5d2418e7a8ff99f0f75c20"
+    },
+    {
+      "file": "floor_pebbles_01_nor_gl_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/floor_pebbles_01/floor_pebbles_01_nor_gl_2k.jpg",
+      "bytes": 3397270,
+      "sha256": "b2f6ecc9e8e252006b0763c83331b3733417b1df6aff9b4873d4b6c9161d4ca3"
+    },
+    {
+      "file": "floor_pebbles_01_rough_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/floor_pebbles_01/floor_pebbles_01_rough_2k.jpg",
+      "bytes": 1516642,
+      "sha256": "abe15a581f6f96a0fbf50cf24102f8b38ead8351cddda69447fb8bf1acb889dd"
+    },
+    {
+      "file": "grass_ground_ao_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/grass_ground/grass_ground_ao_2k.jpg",
+      "bytes": 4064520,
+      "sha256": "ae4739457175ab2add4421a8ae803c7ef5005c946f942828d2adf7abe9843850"
+    },
+    {
+      "file": "grass_ground_diff_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/grass_ground/grass_ground_diff_2k.jpg",
+      "bytes": 3787330,
+      "sha256": "4272bddc71a7fa659d1deeb13a9df8c42e68a5ac8cde7523187e4a081e028258"
+    },
+    {
+      "file": "grass_ground_disp_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/grass_ground/grass_ground_disp_2k.jpg",
+      "bytes": 2667246,
+      "sha256": "7871dd774df740647f16341196f60b6680c69f8073046ae9129f4a319685f2db"
+    },
+    {
+      "file": "grass_ground_nor_gl_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/grass_ground/grass_ground_nor_gl_2k.jpg",
+      "bytes": 5968024,
+      "sha256": "effa95c06af273c974476d9a74a234668a1c9292f60fffb4fa40348d638ee7f3"
+    },
+    {
+      "file": "grass_ground_rough_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/grass_ground/grass_ground_rough_2k.jpg",
+      "bytes": 1525000,
+      "sha256": "afaed95537e894b8054db38c81712a6d9504b05b560274526621d91d5a95fbe7"
+    }
+  ]
+}

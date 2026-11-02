@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "scene": "kitchen_can_collision",
+  "seed": 0,
+  "physics": {
+    "driver_mass": 0.24,
+    "receiver_mass": 0.24,
+    "initial_velocity": 0.62,
+    "receiver_initial_velocity": 0.0,
+    "restitution": 0.45,
+    "receiver_active": [
+      1
+    ]
+  },
+  "render": {
+    "fps": 24,
+    "duration_sec": 4.0,
+    "slow_motion": 1,
+    "resolution": [
+      960,
+      540
+    ],
+    "samples": 48
+  },
+  "camera": {
+    "location": [
+      -1.4,
+      -1.15,
+      1.75
+    ],
+    "target": [
+      0.16,
+      0.05,
+      1.015
+    ],
+    "lens_mm": 44
+  }
+}

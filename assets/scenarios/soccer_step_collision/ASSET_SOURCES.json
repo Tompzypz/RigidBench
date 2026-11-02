@@ -1,0 +1,67 @@
+{
+  "assets": [
+    {
+      "file": "new-scripts\\models\\cheap_soccer_ball.glb",
+      "sha256": "dbb81294d22a95cc60f0587e66d197dc841f538ab7e38706dd0e2cf33339edfb",
+      "bytes": 3700268,
+      "source": "Existing user-provided new-scripts/models asset, reused unchanged",
+      "original_matches": null,
+      "license": "Retains original user-provided model provenance; no new license asserted"
+    },
+    {
+      "file": "new-scripts\\models\\basketball.glb",
+      "sha256": "5e5bd521b20c99237ca7a161edb2f06a879c7c94f631117eeae3f5fb9b5914ac",
+      "bytes": 2855616,
+      "source": "scripts\\models\\basketball.glb",
+      "original_matches": true,
+      "license": "Retains original user-provided model provenance; no new license asserted"
+    },
+    {
+      "file": "new-scripts\\models\\fiddle_leaf_fig.glb",
+      "sha256": "150df7035da6c35b6ff18203939050dffefca6d67aa8f55bb5962bbfee3ad5c6",
+      "bytes": 17805068,
+      "source": "scripts\\models\\fiddle_leaf_fig.glb",
+      "original_matches": true,
+      "license": "CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)",
+      "embedded_attribution": {
+        "author": "rhc56 (https://sketchfab.com/rhc56)",
+        "license": "CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)",
+        "source": "https://sketchfab.com/3d-models/fiddle-leaf-fig-eddd3a95eb584157b32cd33ae5e9f6ee",
+        "title": "Fiddle Leaf Fig"
+      }
+    },
+    {
+      "file": "new-scripts\\soccer_step_collision\\assets\\concrete_floor_diff_2k.jpg",
+      "sha256": "f6ab492c91539c52d6e6312d4b3d90f27ce840c825f41577f8a53743f247156c",
+      "bytes": 2536908,
+      "source": "Local copy from scripts/u_track_ball/assets or scripts/_neat_probe/assets",
+      "provider": "Poly Haven",
+      "license": "CC0 (per original local asset manifests)"
+    },
+    {
+      "file": "new-scripts\\soccer_step_collision\\assets\\concrete_floor_nor_gl_2k.jpg",
+      "sha256": "5a3e4bdd6a5837b139931e10bfb8dbbb477003a79f24fd0bf2df944f42318c10",
+      "bytes": 2836211,
+      "source": "Local copy from scripts/u_track_ball/assets or scripts/_neat_probe/assets",
+      "provider": "Poly Haven",
+      "license": "CC0 (per original local asset manifests)"
+    },
+    {
+      "file": "new-scripts\\soccer_step_collision\\assets\\concrete_floor_rough_2k.jpg",
+      "sha256": "2b92a4d144b624e6cf1e852dd773e5c063a39842e61b312474676eac15fb215f",
+      "bytes": 2683642,
+      "source": "Local copy from scripts/u_track_ball/assets or scripts/_neat_probe/assets",
+      "provider": "Poly Haven",
+      "license": "CC0 (per original local asset manifests)"
+    },
+    {
+      "file": "new-scripts\\soccer_step_collision\\assets\\wood_floor_worn_diff_2k.jpg",
+      "sha256": "aff7c4037c3d4d900d2702d9f676ea86338099e98f69fc91b3e3c5de9f488cbf",
+      "bytes": 2531019,
+      "source": "Local copy from scripts/u_track_ball/assets or scripts/_neat_probe/assets",
+      "provider": "Poly Haven",
+      "license": "CC0 (per original local asset manifests)"
+    }
+  ],
+  "room": "Authored locally in scene_environment.py; procedural architecture and furniture, packed in output .blend files"
+}

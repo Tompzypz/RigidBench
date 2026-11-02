@@ -1,0 +1,38 @@
+{
+  "note": "User-provided local models copied byte-for-byte; original provenance and licenses are retained. No new license asserted.",
+  "code_reference": "../scripts/home_basketball_door (room extraction, fitted door and lighting helpers)",
+  "assets": [
+    {
+      "filename": "basketball.glb",
+      "source": "../../scripts/models/basketball.glb",
+      "local_copy": "../models/basketball.glb",
+      "sha256": "5e5bd521b20c99237ca7a161edb2f06a879c7c94f631117eeae3f5fb9b5914ac",
+      "bytes": 2855616,
+      "source_modified": false
+    },
+    {
+      "filename": "cloe_room.glb",
+      "source": "../../scripts/models/cloe_room.glb",
+      "local_copy": "../models/cloe_room.glb",
+      "sha256": "c7715035be21c7bc2184a34c854f56ba4c3e61e8ed36138378f707b8debe5cd3",
+      "bytes": 16904928,
+      "source_modified": false
+    },
+    {
+      "filename": "old_door.glb",
+      "source": "../../scripts/models/old_door.glb",
+      "local_copy": "../models/old_door.glb",
+      "sha256": "918b1edf4d13d164183275ba8aaaed9b9b01eab0d3b2adb6351b93cd3cc30cc0",
+      "bytes": 3152140,
+      "source_modified": false
+    },
+    {
+      "filename": "cafe_wall_pictures.glb",
+      "source": "../../scripts/models/cafe_wall_pictures.glb",
+      "local_copy": "../models/cafe_wall_pictures.glb",
+      "sha256": "e598eb7202ddca71d1379c7f1a52a827e763a394626915f5200e2fc4ecd1bee2",
+      "bytes": 5659124,
+      "source_modified": false
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "width_m": 0.9378065633444433,
+  "height_m": 1.9855068139135839,
+  "thickness_m": 0.045,
+  "hinge_world": [
+    -0.8464645743370056,
+    -5.481355667114258,
+    0.021037932485342026
+  ],
+  "asset_open_angle_deg": -25.88,
+  "vertex_count": 36,
+  "source_node": "do&win",
+  "closed_yaw_deg": -25.880465174456628,
+  "bottom_clearance_m": 0.007,
+  "hinge_front_edge": true,
+  "opening_width_m": 0.9458065633444434,
+  "opening_top_world_z": 2.017544746398926,
+  "opening_left_world": [
+    -0.871015191078186,
+    -5.5227952003479,
+    0.01788216084241867
+  ],
+  "opening_right_world": [
+    -0.0200667604804039,
+    -5.935635089874268,
+    0.018227772787213326
+  ],
+  "wall_panel_world_x": [
+    -1.1900001764297485,
+    0.5281248688697815
+  ],
+  "wall_front_offset_from_hinge_m": -0.048,
+  "wall_depth_m": 0.08,
+  "side_clearance_m": 0.004
+}

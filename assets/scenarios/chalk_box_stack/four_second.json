@@ -1,0 +1,24 @@
+{
+  "physics": {
+    "eraser_speed": 2.8,
+    "eraser_mass": 2.5,
+    "box_friction": 0.3,
+    "eraser_friction": 0.42,
+    "eraser_start_x": -1.1
+  },
+  "render": {
+    "fps": 24,
+    "duration_sec": 4.0,
+    "slow_motion": 1,
+    "resolution": [
+      1280,
+      720
+    ],
+    "samples": 32
+  },
+  "camera": {
+    "target": [-0.296, 0.052, 0.787],
+    "location": [-1.846, -1.998, 1.567],
+    "ortho_scale": 1.593
+  }
+}

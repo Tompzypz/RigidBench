@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "scene": "soccer_step_collision",
+  "seed": 0,
+  "physics": {
+    "soccer_mass": 0.43,
+    "basketball_mass": 0.62,
+    "launch_speed": 1.95,
+    "step_height": 0.045,
+    "surface_rolling_friction": 0.0015,
+    "soccer_restitution": 0.72,
+    "basketball_restitution": 0.78
+  },
+  "render": {
+    "fps": 24,
+    "duration_sec": 4.0,
+    "resolution": [
+      960,
+      540
+    ],
+    "samples": 40
+  },
+  "camera": {
+    "location": [
+      -2.6,
+      -5.5,
+      2.15
+    ],
+    "target": [
+      0.55,
+      0.1,
+      0.35
+    ],
+    "lens_mm": 48
+  }
+}

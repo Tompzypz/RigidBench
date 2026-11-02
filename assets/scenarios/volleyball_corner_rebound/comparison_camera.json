@@ -1,0 +1,9 @@
+{
+  "render": {
+    "camera_location": [8.6, 7.6, 2.25],
+    "camera_target": [3.4, 3.5, 1.2],
+    "camera_mode": "fixed",
+    "adaptive_lens": false,
+    "lens_mm": 38.0
+  }
+}

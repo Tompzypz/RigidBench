@@ -1,0 +1,42 @@
+{
+  "provider": "Poly Haven",
+  "license": "CC0",
+  "license_url": "https://polyhaven.com/license",
+  "source_pages": [
+    "https://polyhaven.com/a/wood_table",
+    "https://polyhaven.com/a/wood_floor_worn",
+    "https://polyhaven.com/a/wooden_lounge"
+  ],
+  "files": [
+    {
+      "file": "wood_table_diff_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_table/wood_table_diff_2k.jpg",
+      "bytes": 3954552,
+      "sha256": "abf40084777a3abdb8136ea8b643de40ec9bae4b36c865a0206badb1cacd07a7"
+    },
+    {
+      "file": "wood_table_rough_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_table/wood_table_rough_2k.jpg",
+      "bytes": 2482251,
+      "sha256": "fbd62023abf566dee28e139d8d5af59866f7db56657e9b9be48187ebf030a7fa"
+    },
+    {
+      "file": "wood_table_nor_gl_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_table/wood_table_nor_gl_2k.jpg",
+      "bytes": 2471254,
+      "sha256": "0b64d7db93451cc5ca9a5e1b1178328d54033f4be9f8cad4566b4e119a85ab4a"
+    },
+    {
+      "file": "wood_floor_worn_diff_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/wood_floor_worn/wood_floor_worn_diff_2k.jpg",
+      "bytes": 2531019,
+      "sha256": "aff7c4037c3d4d900d2702d9f676ea86338099e98f69fc91b3e3c5de9f488cbf"
+    },
+    {
+      "file": "wooden_lounge_2k.hdr",
+      "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/wooden_lounge_2k.hdr",
+      "bytes": 6418235,
+      "sha256": "128a17aa4b184752f8db938d7a6c02269e8521a7a6963f3170cb25d478dc1e9a"
+    }
+  ]
+}

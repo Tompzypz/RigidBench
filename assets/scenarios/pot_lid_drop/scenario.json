@@ -1,0 +1,121 @@
+{
+  "scene": "pot_lid_drop",
+  "description": "A rigid pot lid tips in free fall, strikes its rim, rebounds and rocks to a stable rest on the kitchen floor.",
+  "assets": {
+    "kitchen": "modern_kitchen.glb",
+    "pot": "a_pot.glb"
+  },
+  "physics": {
+    "fps": 24,
+    "duration_sec": 4.0,
+    "substeps_per_frame": 60,
+    "solver_iterations": 150,
+    "gravity_z": -9.81,
+    "lid_mass": 0.45,
+    "lid_friction": 0.5,
+    "lid_rolling_friction": 0.0025,
+    "lid_spinning_friction": 0.02,
+    "lid_restitution": 0.22,
+    "lid_linear_damping": 0.02,
+    "lid_angular_damping": 0.03,
+    "floor_friction": 0.55,
+    "lid_drop_height": 1.1,
+    "lid_start_xy": [
+      0.0,
+      0.0
+    ],
+    "lid_start_tilt_deg": [
+      25,
+      0,
+      0
+    ],
+    "lid_start_velocity": [
+      0.45,
+      -0.06,
+      0
+    ],
+    "lid_start_spin": [
+      1.6,
+      0.15,
+      0
+    ],
+    "lid_radius_m": 0.12,
+    "lid_rim_thickness_m": 0.014,
+    "timed_edits": [],
+    "floor_rolling_friction": 0.002,
+    "floor_spinning_friction": 0.002,
+    "lid_collision_margin_m": 0.0002
+  },
+  "layout": {
+    "room_scale": 0.5,
+    "room_offset": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "floor_z": -0.09,
+    "counter_top_z": 0.945,
+    "action_origin": [
+      0.62,
+      -0.85
+    ],
+    "lid_diameter_m": 0.24,
+    "lid_node_name": "pCylinder2",
+    "pot_node_name": "pCylinder3",
+    "pot_location": [
+      -0.32,
+      0.0
+    ],
+    "pot_sink_m": 0.002,
+    "collision_shape": "mesh_hull",
+    "collision_segments": 64,
+    "camera_location": [
+      0.84,
+      -1.66,
+      0.64
+    ],
+    "camera_target": [
+      0.14,
+      -0.16,
+      0.51
+    ],
+    "camera_lens_mm": 20.0,
+    "keyframes": [
+      1,
+      7,
+      12,
+      13,
+      14,
+      16,
+      20,
+      25,
+      32
+    ],
+    "lighting": {
+      "world_strength": 0.13,
+      "key_power": 15.0,
+      "fill_power": 5.0,
+      "rim_power": 2.0,
+      "sun_energy": 4.0,
+      "sun_angle_deg": 4.0,
+      "sun_direction": [
+        0.75,
+        0.55,
+        -1.0
+      ]
+    },
+    "glb_emission_scale": 0.0,
+    "grade": {
+      "view_transform": "AgX",
+      "look": "AgX - Punchy",
+      "exposure": -0.6
+    },
+    "lid_tint": 0.55,
+    "material_roughness_floor": {
+      "floor": 0.55,
+      "tile": 0.55,
+      "cupboard": 0.45,
+      "counter": 0.4
+    }
+  }
+}

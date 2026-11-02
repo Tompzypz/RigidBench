@@ -1,0 +1,46 @@
+{
+  "note": "User-provided local assets; original source licenses unchanged.",
+  "assets": [
+    {
+      "filename": "modern_kitchen.glb",
+      "source": "D:\\Desktop\\课题组\\视频编辑模型\\PCVE-RigidBench-main - 副本（10.14）\\PCVE-RigidBench-main\\scripts\\models\\modern_kitchen.glb",
+      "local_copy": "D:\\Desktop\\课题组\\视频编辑模型\\PCVE-RigidBench-main - 副本（10.14）\\PCVE-RigidBench-main\\new-scripts\\models\\modern_kitchen.glb",
+      "sha256": "0f4793a02906f90cc07a423663df8c99d763f030347713731c08082467576f58",
+      "source_sha256": "0f4793a02906f90cc07a423663df8c99d763f030347713731c08082467576f58",
+      "bytes": 19789496,
+      "source_modified": false
+    },
+    {
+      "filename": "bowl_and_chops.glb",
+      "source": "D:\\Desktop\\课题组\\视频编辑模型\\PCVE-RigidBench-main - 副本（10.14）\\PCVE-RigidBench-main\\scripts\\models\\bowl_and_chops.glb",
+      "local_copy": "D:\\Desktop\\课题组\\视频编辑模型\\PCVE-RigidBench-main - 副本（10.14）\\PCVE-RigidBench-main\\new-scripts\\models\\bowl_and_chops.glb",
+      "sha256": "916e5051bbd1c012de45dedba7a92a151278ce050af44ef4e9cf46ddf79b8cc1",
+      "source_sha256": "916e5051bbd1c012de45dedba7a92a151278ce050af44ef4e9cf46ddf79b8cc1",
+      "bytes": 14843696,
+      "source_modified": false
+    },
+    {
+      "filename": "pepsi_tin_with_texture.glb",
+      "source": "D:\\Desktop\\课题组\\视频编辑模型\\PCVE-RigidBench-main - 副本（10.14）\\PCVE-RigidBench-main\\scripts\\models\\pepsi_tin_with_texture.glb",
+      "local_copy": "D:\\Desktop\\课题组\\视频编辑模型\\PCVE-RigidBench-main - 副本（10.14）\\PCVE-RigidBench-main\\new-scripts\\models\\pepsi_tin_with_texture.glb",
+      "sha256": "0ad15a3285e5ae009a9e48ca5c7af7cbe3b34f8cdf9f6e38a1865db97bcf9874",
+      "source_sha256": "0ad15a3285e5ae009a9e48ca5c7af7cbe3b34f8cdf9f6e38a1865db97bcf9874",
+      "bytes": 563988,
+      "source_modified": false
+    }
+  ],
+  "procedural_geometry": {
+    "source": "tabletop_props.py",
+    "objects": [
+      "inset cutting board",
+      "woven linen",
+      "coffee mug and coffee",
+      "teaspoon",
+      "red apple",
+      "lemon",
+      "olive oil bottle and label",
+      "sage bowl and mandarins"
+    ],
+    "external_assets_added": false
+  }
+}

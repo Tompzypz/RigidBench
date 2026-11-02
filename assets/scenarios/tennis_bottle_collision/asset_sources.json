@@ -1,0 +1,45 @@
+{
+  "assets": [
+    {
+      "file": "cloe_room.glb",
+      "source": "https://sketchfab.com/3d-models/cloe-room-e340aa738f884260bf6e134c64e749d1",
+      "local": "../models/cloe_room.glb",
+      "bytes": 16904928,
+      "sha256": "c7715035be21c7bc2184a34c854f56ba4c3e61e8ed36138378f707b8debe5cd3",
+      "author": "destkbo (https://sketchfab.com/destkbo)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "title": "cloe room",
+      "copied_from": "../../scripts/models/cloe_room.glb"
+    },
+    {
+      "file": "plastic_water_bottle.glb",
+      "source": "https://sketchfab.com/3d-models/plastic-water-bottle-efa1c4c1f2a947659ded2e61e20eff31",
+      "local": "../models/plastic_water_bottle.glb",
+      "bytes": 303304,
+      "sha256": "e1d86f51dd59d0c5b20ed4bba113fa43f509f9aa40bc23382aab2d1efbbc8ec2",
+      "author": "Jeremy E. Grayson (https://sketchfab.com/JeremyGrayson)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "title": "Plastic Water Bottle",
+      "copied_from": "../../scripts/models/plastic_water_bottle.glb"
+    },
+    {
+      "file": "tennis_ball.glb",
+      "source": "https://sketchfab.com/3d-models/tennis-ball-edc344dcc65440ea97b5eae84f1957a4",
+      "local": "../models/tennis_ball.glb",
+      "bytes": 13738920,
+      "sha256": "d488a09a303000a6e4fe8dce3f6141c426414d8ed26a6e4f4e9627ac8cd21b34",
+      "author": "Tentrox (https://sketchfab.com/sudharsanme)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "title": "Tennis Ball",
+      "copied_from": "../../scripts/models/tennis_ball.glb"
+    }
+  ],
+  "bottle_revision": {
+    "appearance_version": 2,
+    "body": "Procedural hollow PET replacement; no liquid geometry or waterline surface",
+    "cap": "Retained from local plastic_water_bottle.glb",
+    "geometry_source": "empty_bottle_geometry.py",
+    "mass_properties": "empty_bottle_properties.json",
+    "baseline_mass_kg": 0.026
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "basketball": {
+    "source": "scripts/models/basketball.glb",
+    "local_copy": "new-scripts/models/basketball.glb",
+    "note": "Existing user-provided project asset; source attribution and license remain those of the original asset. No download."
+  },
+  "floor_texture": {
+    "source": "scripts/newtons_cradle/assets/wood_floor_worn_diff_2k.jpg",
+    "local_copy": "new-scripts/models/basketball_corner/wood_floor_worn_diff_2k.jpg",
+    "note": "Existing project texture, documented by the original scenes as Poly Haven wood_floor_worn. No download."
+  },
+  "room": {
+    "source": "Locally authored metre-scale architecture, plaster materials and decorative geometry in scene_environment.py",
+    "reference": "Existing scripts/models/cloe_room.glb and scripts scene organization were reviewed; the room GLB is not loaded by this scene."
+  }
+}

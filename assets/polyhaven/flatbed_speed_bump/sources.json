@@ -1,0 +1,111 @@
+{
+  "provider": "Poly Haven",
+  "license": "CC0",
+  "license_url": "https://polyhaven.com/license",
+  "source_pages": [
+    "https://polyhaven.com/a/asphalt_02",
+    "https://polyhaven.com/a/concrete_floor_damaged_01",
+    "https://polyhaven.com/a/corrugated_iron_02",
+    "https://polyhaven.com/a/painted_metal_shutter",
+    "https://polyhaven.com/a/metal_plate",
+    "https://polyhaven.com/a/industrial_sunset_02"
+  ],
+  "files": [
+    {
+      "file": "asphalt_02_diff_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_02/asphalt_02_diff_2k.jpg",
+      "bytes": 3075676,
+      "sha256": "28f5ba8690553f192c0e5e1a5ff40f34765b4b93f4cc7059b1a3e9c795b6c28c"
+    },
+    {
+      "file": "asphalt_02_nor_gl_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_02/asphalt_02_nor_gl_2k.jpg",
+      "bytes": 4943950,
+      "sha256": "ffe49db71a0fd34c1e259625df66a302a237597d6ef655307987ec4e45bc6f21"
+    },
+    {
+      "file": "asphalt_02_rough_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_02/asphalt_02_rough_2k.jpg",
+      "bytes": 2230457,
+      "sha256": "b9a516b61b7040a9245ac206642d5f767ad9589a0169c4a1668221429e8a998c"
+    },
+    {
+      "file": "concrete_floor_damaged_01_diff_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_damaged_01/concrete_floor_damaged_01_diff_2k.jpg",
+      "bytes": 2536908,
+      "sha256": "f6ab492c91539c52d6e6312d4b3d90f27ce840c825f41577f8a53743f247156c"
+    },
+    {
+      "file": "concrete_floor_damaged_01_nor_gl_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_damaged_01/concrete_floor_damaged_01_nor_gl_2k.jpg",
+      "bytes": 2836211,
+      "sha256": "5a3e4bdd6a5837b139931e10bfb8dbbb477003a79f24fd0bf2df944f42318c10"
+    },
+    {
+      "file": "concrete_floor_damaged_01_rough_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/concrete_floor_damaged_01/concrete_floor_damaged_01_rough_2k.jpg",
+      "bytes": 2683642,
+      "sha256": "2b92a4d144b624e6cf1e852dd773e5c063a39842e61b312474676eac15fb215f"
+    },
+    {
+      "file": "corrugated_iron_02_diff_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/corrugated_iron_02/corrugated_iron_02_diff_2k.jpg",
+      "bytes": 2325335,
+      "sha256": "1bd2b9900e066d7e6cbacc5093aa4204db71c1bbe13b42a3d8ad23d04fa8075a"
+    },
+    {
+      "file": "corrugated_iron_02_nor_gl_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/corrugated_iron_02/corrugated_iron_02_nor_gl_2k.jpg",
+      "bytes": 2178443,
+      "sha256": "a7972360f64fb44beee57750b0ad6bee1f3b64268cd9f649b5e92e1de4de0632"
+    },
+    {
+      "file": "corrugated_iron_02_rough_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/corrugated_iron_02/corrugated_iron_02_rough_2k.jpg",
+      "bytes": 3492646,
+      "sha256": "926d883052ad9f07e3110f3ce09157d9968872d1f7dafc7da70460f3158f4b4b"
+    },
+    {
+      "file": "painted_metal_shutter_diff_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/painted_metal_shutter/painted_metal_shutter_diff_2k.jpg",
+      "bytes": 2474114,
+      "sha256": "0aa6835b7da52960dd371897f1777166210ca07386a2872eb162ab8398595997"
+    },
+    {
+      "file": "painted_metal_shutter_nor_gl_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/painted_metal_shutter/painted_metal_shutter_nor_gl_2k.jpg",
+      "bytes": 3097249,
+      "sha256": "2757f76146b522c9a0e5c057bd8fcac6600861def33a814c63b8b8e1f6a1d97f"
+    },
+    {
+      "file": "painted_metal_shutter_rough_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/painted_metal_shutter/painted_metal_shutter_rough_2k.jpg",
+      "bytes": 2304207,
+      "sha256": "69baaf22e4be633912567d8518a607b5bcfdca68f5cb049d3c956e81700b8008"
+    },
+    {
+      "file": "metal_plate_diff_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/metal_plate/metal_plate_diff_2k.jpg",
+      "bytes": 2670774,
+      "sha256": "864c9a653acd1f5034c9bbe7f955b18cc9687a81bbdfa805e7a2319939676910"
+    },
+    {
+      "file": "metal_plate_nor_gl_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/metal_plate/metal_plate_nor_gl_2k.jpg",
+      "bytes": 2516654,
+      "sha256": "146f8c00874a584bcc4a184643e72f160da2a7568d469198e02b26c9ff93cf43"
+    },
+    {
+      "file": "metal_plate_rough_2k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/metal_plate/metal_plate_rough_2k.jpg",
+      "bytes": 3045988,
+      "sha256": "3cdc139df4ec5b304dd986278c1fb026c67c42e6623f0ee5caa7f373d51c7bef"
+    },
+    {
+      "file": "industrial_sunset_02_2k.hdr",
+      "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/industrial_sunset_02_2k.hdr",
+      "bytes": 6434769,
+      "sha256": "79932a707cd0269e289638b181cdcaa13071556e0ec30ceadbf070da8bb457f8"
+    }
+  ]
+}

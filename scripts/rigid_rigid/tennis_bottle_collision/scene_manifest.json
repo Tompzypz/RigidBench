@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "scene": "tennis_bottle_collision",
+  "category": "rigid_rigid",
+  "directory": "scripts/rigid_rigid/tennis_bottle_collision",
+  "source_provenance": "clean_scripts/tennis_bottle_collision",
+  "canonical_entrypoints": {
+    "simulate": "simulate_tennis_bottle_collision.py",
+    "render": "render_tennis_bottle_collision.py",
+    "build_pcve": "build_pcve_tennis_bottle_collision.py"
+  },
+  "workflows": {
+    "batch_render": "tools/render_queue.py"
+  },
+  "modules": {
+    "scene_config": "scene_config.py",
+    "edit_vocab": "edit_vocab.py",
+    "physics": [
+      "physics/empty_bottle_geometry.py",
+      "physics/empty_bottle_validation.py",
+      "physics/runtime_support.py",
+      "physics/scene_geometry.py",
+      "physics/validate_tennis_bottle_collision.py"
+    ],
+    "appearance": [
+      "appearance/look_tennis_bottle_collision.py"
+    ],
+    "tools": [
+      "tools/audit_tennis_bottle_collision.py",
+      "tools/render_queue.py"
+    ]
+  },
+  "cases": [
+    "tennis_bottle_collision_baseline",
+    "edit_fast_ball",
+    "edit_heavy_bottles",
+    "edit_remove_far_bottle",
+    "edit_add_lane_bottle",
+    "edit_dead_bottles_timed"
+  ],
+  "assets": {
+    "models": [],
+    "texture_sets": [],
+    "scenarios": []
+  },
+  "requirements": [
+    "pybullet==3.2.7"
+  ],
+  "files": [
+    "README.md",
+    "appearance/look_tennis_bottle_collision.py",
+    "build_pcve_tennis_bottle_collision.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "physics/empty_bottle_geometry.py",
+    "physics/empty_bottle_validation.py",
+    "physics/runtime_support.py",
+    "physics/scene_geometry.py",
+    "physics/validate_tennis_bottle_collision.py",
+    "render_tennis_bottle_collision.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_tennis_bottle_collision.py",
+    "tools/audit_tennis_bottle_collision.py",
+    "tools/render_queue.py"
+  ]
+}

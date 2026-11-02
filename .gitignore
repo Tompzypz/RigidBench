@@ -1,0 +1,4 @@
+videos/
+.build/
+__pycache__/
+*.pyc

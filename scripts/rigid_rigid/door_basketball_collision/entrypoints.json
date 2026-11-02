@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "scene": "door_basketball_collision",
+  "category": "rigid_rigid",
+  "entrypoints": {
+    "simulate": {
+      "file": "simulate_door_basketball_collision.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out",
+        "filename": "simulation.json"
+      },
+      "native_options": [
+        "--out",
+        "--scenario",
+        "--scenario-overrides-json",
+        "--door-leaf-json",
+        "--fps",
+        "--duration-sec",
+        "--substeps"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "python_runtime": null,
+      "cases": []
+    },
+    "render": {
+      "file": "render_door_basketball_collision.py",
+      "runtime": "blender",
+      "output": {
+        "flag": "--out-dir"
+      },
+      "native_options": [
+        "--mode",
+        "--out-dir",
+        "--models-dir",
+        "--scenario",
+        "--scenario-overrides-json",
+        "--physics-python",
+        "--resolution",
+        "--fps",
+        "--duration-sec",
+        "--samples",
+        "--device",
+        "--keyframes",
+        "--preview-frame",
+        "--engine",
+        "--out",
+        "--door-leaf-json"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "python_runtime": null,
+      "cases": []
+    },
+    "build_pcve": {
+      "file": "build_pcve_door_basketball_collision.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out-root"
+      },
+      "native_options": [
+        "--out-root",
+        "--simulate-only",
+        "--render-python",
+        "--mode",
+        "--resolution",
+        "--samples",
+        "--keyframes",
+        "--device",
+        "--only",
+        "--skip-existing",
+        "--scenario",
+        "--out-dir"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [
+        "door_basketball_collision_baseline",
+        "edit_fast_door",
+        "edit_heavy_door",
+        "edit_heavy_ball",
+        "edit_remove_ball",
+        "edit_stiff_hinge_midway"
+      ],
+      "python_runtime": null
+    }
+  },
+  "workflows": {
+    "batch_render": {
+      "file": "tools/render_queue.py",
+      "runtime": "python",
+      "python_runtime": null,
+      "output": {
+        "flag": "--out-root"
+      },
+      "native_options": [
+        "--out-root",
+        "--simulate-only",
+        "--render-python",
+        "--mode",
+        "--resolution",
+        "--samples",
+        "--keyframes",
+        "--device",
+        "--only",
+        "--skip-existing",
+        "--scenario",
+        "--out-dir",
+        "--count",
+        "--seed"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [],
+      "description": "Randomised batch sampling on top of the scene builder."
+    }
+  },
+  "implementation_policy": "Scene physics, geometry, rendering and helper modules are included in the seven scene files; only reference common scripts and repository assets are external.",
+  "runtime_policy": "python_runtime is null on purpose: every entry runs in the interpreter that invokes it. Use --physics-python / --render-python / --blender to point at a specific environment instead of baking a machine path into the manifest.",
+  "implementation_files": [
+    "README.md",
+    "appearance/door_asset.py",
+    "appearance/pcve_blender_compat.py",
+    "build_pcve_door_basketball_collision.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "render_door_basketball_collision.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_door_basketball_collision.py",
+    "tools/audit_door_basketball_collision.py",
+    "tools/render_queue.py"
+  ]
+}

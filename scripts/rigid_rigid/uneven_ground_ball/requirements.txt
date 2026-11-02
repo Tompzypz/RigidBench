@@ -1,0 +1,4 @@
+# Simulation environment; Blender's bpy ships with the renderer.
+pybullet==3.2.7
+numpy
+pillow

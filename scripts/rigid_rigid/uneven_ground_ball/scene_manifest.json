@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "scene": "uneven_ground_ball",
+  "category": "rigid_rigid",
+  "directory": "scripts/rigid_rigid/uneven_ground_ball",
+  "source_provenance": "clean_scripts/uneven_ground_ball",
+  "canonical_entrypoints": {
+    "simulate": "simulate_uneven_ground_ball.py",
+    "render": "render_uneven_ground_ball.py",
+    "build_pcve": "build_pcve_uneven_ground_ball.py"
+  },
+  "workflows": {
+    "batch_render": "tools/render_queue.py"
+  },
+  "modules": {
+    "scene_config": "scene_config.py",
+    "edit_vocab": "edit_vocab.py",
+    "physics": [
+      "physics/runtime_support.py",
+      "physics/terrain_geometry.py"
+    ],
+    "appearance": [
+      "appearance/look_uneven_ground_ball.py",
+      "appearance/video_presentation.py"
+    ],
+    "tools": [
+      "tools/audit_uneven_ground_ball.py",
+      "tools/render_queue.py"
+    ]
+  },
+  "cases": [
+    "uneven_ground_ball_baseline",
+    "edit_slow_ball",
+    "edit_fast_ball",
+    "edit_low_friction",
+    "edit_high_rolling_resistance",
+    "edit_braking_timed"
+  ],
+  "assets": {
+    "models": [],
+    "texture_sets": [],
+    "scenarios": []
+  },
+  "requirements": [
+    "pybullet==3.2.7",
+    "numpy",
+    "pillow"
+  ],
+  "files": [
+    "README.md",
+    "appearance/look_uneven_ground_ball.py",
+    "appearance/video_presentation.py",
+    "build_pcve_uneven_ground_ball.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "physics/runtime_support.py",
+    "physics/terrain_geometry.py",
+    "render_uneven_ground_ball.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_uneven_ground_ball.py",
+    "tools/audit_uneven_ground_ball.py",
+    "tools/render_queue.py"
+  ]
+}

@@ -1,0 +1,2 @@
+# Simulation environment; Blender's bpy ships with the renderer.
+

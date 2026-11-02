@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "scene": "home_basketball_door",
+  "category": "rigid_rigid",
+  "directory": "scripts/rigid_rigid/home_basketball_door",
+  "source_provenance": "clean_scripts/home_basketball_door",
+  "canonical_entrypoints": {
+    "simulate": "simulate_home_basketball_door.py",
+    "render": "render_home_basketball_door.py",
+    "build_pcve": "build_pcve_home_basketball_door.py"
+  },
+  "workflows": {
+    "batch_render": "tools/render_queue.py"
+  },
+  "modules": {
+    "scene_config": "scene_config.py",
+    "edit_vocab": "edit_vocab.py",
+    "physics": [],
+    "appearance": [
+      "appearance/door_asset.py"
+    ],
+    "tools": [
+      "tools/audit_home_basketball_door.py",
+      "tools/render_queue.py"
+    ]
+  },
+  "cases": [
+    "home_basketball_door_baseline",
+    "edit_light_ball",
+    "edit_heavy_door",
+    "edit_stiff_hinge",
+    "edit_slow_throw",
+    "edit_stiff_hinge_late"
+  ],
+  "assets": {
+    "models": [],
+    "texture_sets": [],
+    "scenarios": []
+  },
+  "requirements": [
+    "pybullet==3.2.7"
+  ],
+  "files": [
+    "README.md",
+    "appearance/door_asset.py",
+    "build_pcve_home_basketball_door.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "render_home_basketball_door.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_home_basketball_door.py",
+    "tools/audit_home_basketball_door.py",
+    "tools/render_queue.py"
+  ]
+}

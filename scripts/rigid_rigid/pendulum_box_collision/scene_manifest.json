@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "scene": "pendulum_box_collision",
+  "category": "rigid_rigid",
+  "directory": "scripts/rigid_rigid/pendulum_box_collision",
+  "source_provenance": "clean_scripts/pendulum_box_collision",
+  "canonical_entrypoints": {
+    "simulate": "simulate_pendulum_box_collision.py",
+    "render": "render_pendulum_box_collision.py",
+    "build_pcve": "build_pcve_pendulum_box_collision.py"
+  },
+  "workflows": {
+    "batch_render": "tools/render_queue.py"
+  },
+  "modules": {
+    "scene_config": "scene_config.py",
+    "edit_vocab": "edit_vocab.py",
+    "physics": [
+      "physics/runtime_support.py",
+      "physics/scene_geometry.py",
+      "physics/validate_pendulum_box_collision.py"
+    ],
+    "appearance": [
+      "appearance/look_pendulum_box_collision.py",
+      "appearance/render_quality.py"
+    ],
+    "tools": [
+      "tools/audit_pendulum_box_collision.py",
+      "tools/render_queue.py"
+    ]
+  },
+  "cases": [
+    "pendulum_box_collision_baseline",
+    "edit_heavy_bob",
+    "edit_still_bob",
+    "edit_heavy_block",
+    "edit_fast_block",
+    "edit_soft_bounce_timed"
+  ],
+  "assets": {
+    "models": [
+      "realistic_blackboard.glb",
+      "the_pen.glb"
+    ],
+    "texture_sets": [],
+    "scenarios": []
+  },
+  "requirements": [
+    "pybullet==3.2.7"
+  ],
+  "files": [
+    "README.md",
+    "appearance/look_pendulum_box_collision.py",
+    "appearance/render_quality.py",
+    "build_pcve_pendulum_box_collision.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "physics/runtime_support.py",
+    "physics/scene_geometry.py",
+    "physics/validate_pendulum_box_collision.py",
+    "render_pendulum_box_collision.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_pendulum_box_collision.py",
+    "tools/audit_pendulum_box_collision.py",
+    "tools/render_queue.py"
+  ]
+}

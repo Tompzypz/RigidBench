@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "scene": "pendulum_box_collision",
+  "category": "rigid_rigid",
+  "entrypoints": {
+    "simulate": {
+      "file": "simulate_pendulum_box_collision.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out",
+        "filename": "physics_transforms.json"
+      },
+      "native_options": [
+        "--out",
+        "--scenario-json",
+        "--scenario-overrides-json",
+        "--fps",
+        "--duration-sec",
+        "--slow-motion"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [
+        "pendulum_box_collision_baseline",
+        "edit_heavy_bob",
+        "edit_still_bob",
+        "edit_heavy_block",
+        "edit_fast_block",
+        "edit_soft_bounce_timed"
+      ],
+      "python_runtime": null
+    },
+    "render": {
+      "file": "render_pendulum_box_collision.py",
+      "runtime": "blender",
+      "output": {
+        "flag": "--out-dir"
+      },
+      "native_options": [
+        "--out-dir",
+        "--physics-json",
+        "--scenario-json",
+        "--scenario-overrides-json",
+        "--physics-python",
+        "--fps",
+        "--duration-sec",
+        "--slow-motion",
+        "--samples",
+        "--resolution",
+        "--engine",
+        "--device",
+        "--mode",
+        "--preview-frame",
+        "--frame-count",
+        "--frame-indices",
+        "--out"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [
+        "pendulum_box_collision_baseline",
+        "edit_heavy_bob",
+        "edit_still_bob",
+        "edit_heavy_block",
+        "edit_fast_block",
+        "edit_soft_bounce_timed"
+      ],
+      "python_runtime": null
+    },
+    "build_pcve": {
+      "file": "build_pcve_pendulum_box_collision.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out-root"
+      },
+      "native_options": [
+        "--out-root",
+        "--physics-python",
+        "--render-python",
+        "--blender",
+        "--duration-sec",
+        "--fps",
+        "--slow-motion",
+        "--samples",
+        "--resolution",
+        "--engine",
+        "--device",
+        "--mode",
+        "--simulate-only",
+        "--render-only",
+        "--skip-existing",
+        "--cases",
+        "--dry-run",
+        "--verbose-render",
+        "--clean-stale-cases",
+        "--out",
+        "--scenario-json",
+        "--physics-json",
+        "--out-dir"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [
+        "pendulum_box_collision_baseline",
+        "edit_heavy_bob",
+        "edit_still_bob",
+        "edit_heavy_block",
+        "edit_fast_block",
+        "edit_soft_bounce_timed"
+      ],
+      "python_runtime": null
+    }
+  },
+  "workflows": {
+    "batch_render": {
+      "file": "tools/render_queue.py",
+      "runtime": "python",
+      "python_runtime": null,
+      "output": {
+        "flag": "--out-root"
+      },
+      "native_options": [
+        "--out-root",
+        "--physics-python",
+        "--render-python",
+        "--blender",
+        "--duration-sec",
+        "--fps",
+        "--slow-motion",
+        "--samples",
+        "--resolution",
+        "--engine",
+        "--device",
+        "--mode",
+        "--simulate-only",
+        "--render-only",
+        "--skip-existing",
+        "--cases",
+        "--dry-run",
+        "--verbose-render",
+        "--clean-stale-cases",
+        "--out",
+        "--scenario-json",
+        "--physics-json",
+        "--out-dir",
+        "--count",
+        "--start-index",
+        "--seed-base"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {
+        "blender": "--blender"
+      },
+      "cases": [],
+      "description": "Randomised batch sampling on top of the scene builder."
+    }
+  },
+  "implementation_policy": "Scene physics, geometry, rendering and helper modules are included in the seven scene files; only reference common scripts and repository assets are external.",
+  "runtime_policy": "python_runtime is null on purpose: every entry runs in the interpreter that invokes it. Use --physics-python / --render-python / --blender to point at a specific environment instead of baking a machine path into the manifest.",
+  "implementation_files": [
+    "README.md",
+    "appearance/look_pendulum_box_collision.py",
+    "appearance/render_quality.py",
+    "build_pcve_pendulum_box_collision.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "physics/runtime_support.py",
+    "physics/scene_geometry.py",
+    "physics/validate_pendulum_box_collision.py",
+    "render_pendulum_box_collision.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_pendulum_box_collision.py",
+    "tools/audit_pendulum_box_collision.py",
+    "tools/render_queue.py"
+  ]
+}

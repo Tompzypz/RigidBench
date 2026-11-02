@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "scene": "soccer_step_collision",
+  "category": "rigid_rigid",
+  "entrypoints": {
+    "simulate": {
+      "file": "simulate_soccer_step_collision.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out",
+        "filename": "simulation.json"
+      },
+      "native_options": [
+        "--out",
+        "--scenario-json",
+        "--scenario-overrides-json"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [],
+      "python_runtime": null
+    },
+    "render": {
+      "file": "render_soccer_step_collision.py",
+      "runtime": "blender",
+      "output": {
+        "flag": "--out-dir"
+      },
+      "native_options": [
+        "--out",
+        "--scenario-json",
+        "--scenario-overrides-json",
+        "--out-dir",
+        "--physics-json",
+        "--physics-python",
+        "--resolution",
+        "--samples",
+        "--engine",
+        "--device",
+        "--threads",
+        "--mode",
+        "--keyframes",
+        "--preview-frame"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [],
+      "python_runtime": null
+    },
+    "build_pcve": {
+      "file": "build_pcve_soccer_step_collision.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out-root"
+      },
+      "native_options": [
+        "--out-root",
+        "--mode",
+        "--simulate-only",
+        "--render-only",
+        "--cases",
+        "--keyframes",
+        "--preview-frame",
+        "--resolution",
+        "--samples",
+        "--threads",
+        "--engine",
+        "--device",
+        "--blender",
+        "--render-python",
+        "--physics-json",
+        "--out-dir"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {
+        "blender": "--blender"
+      },
+      "cases": [
+        "soccer_step_collision_baseline",
+        "edit_soccer_mass_x3",
+        "edit_basketball_mass_x3",
+        "edit_soccer_speed_x05",
+        "edit_step_height_x2",
+        "edit_soccer_speed_halved_midrun"
+      ],
+      "python_runtime": null
+    }
+  },
+  "workflows": {
+    "batch_render": {
+      "file": "tools/render_queue.py",
+      "runtime": "python",
+      "python_runtime": null,
+      "output": {
+        "flag": "--out-root"
+      },
+      "native_options": [
+        "--out-root",
+        "--mode",
+        "--simulate-only",
+        "--render-only",
+        "--cases",
+        "--keyframes",
+        "--preview-frame",
+        "--resolution",
+        "--samples",
+        "--threads",
+        "--engine",
+        "--device",
+        "--blender",
+        "--render-python",
+        "--physics-json",
+        "--out-dir"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {
+        "blender": "--blender"
+      },
+      "cases": [],
+      "description": "Randomised batch sampling on top of the scene builder."
+    }
+  },
+  "implementation_policy": "Scene physics, geometry, rendering and helper modules are included in the seven scene files; only reference common scripts and repository assets are external.",
+  "runtime_policy": "python_runtime is null on purpose: every entry runs in the interpreter that invokes it. Use --physics-python / --render-python / --blender to point at a specific environment instead of baking a machine path into the manifest.",
+  "implementation_files": [
+    "README.md",
+    "appearance/look_soccer_step_collision.py",
+    "appearance/plant_styling.py",
+    "build_pcve_soccer_step_collision.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "physics/runtime_support.py",
+    "physics/scene_geometry.py",
+    "physics/validate_soccer_step_collision.py",
+    "render_soccer_step_collision.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_soccer_step_collision.py",
+    "tools/audit_soccer_step_collision.py",
+    "tools/render_queue.py"
+  ]
+}

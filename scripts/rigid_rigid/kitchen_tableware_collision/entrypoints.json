@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "scene": "kitchen_tableware_collision",
+  "category": "rigid_rigid",
+  "entrypoints": {
+    "simulate": {
+      "file": "simulate_kitchen_tableware_collision.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out",
+        "filename": "simulation.json"
+      },
+      "native_options": [
+        "--out",
+        "--scenario-json",
+        "--scenario-overrides-json",
+        "--remove-receiver",
+        "--fps",
+        "--duration-sec",
+        "--slow-motion"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [
+        "kitchen_tableware_collision_baseline",
+        "edit_heavy_driver",
+        "edit_fast_driver",
+        "edit_no_restitution",
+        "edit_remove_receiver",
+        "edit_frictionless_counter_timed"
+      ],
+      "python_runtime": null
+    },
+    "render": {
+      "file": "render_kitchen_tableware_collision.py",
+      "runtime": "blender",
+      "output": {
+        "flag": "--out-dir"
+      },
+      "native_options": [
+        "--out",
+        "--remove-receiver",
+        "--out-dir",
+        "--physics-json",
+        "--physics-python",
+        "--engine",
+        "--device",
+        "--samples",
+        "--resolution",
+        "--mode",
+        "--preview-frame",
+        "--keyframes",
+        "--scenario-json",
+        "--scenario-overrides-json",
+        "--fps",
+        "--duration-sec",
+        "--slow-motion"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [
+        "kitchen_tableware_collision_baseline",
+        "edit_heavy_driver",
+        "edit_fast_driver",
+        "edit_no_restitution",
+        "edit_remove_receiver",
+        "edit_frictionless_counter_timed"
+      ],
+      "python_runtime": null
+    },
+    "build_pcve": {
+      "file": "build_pcve_kitchen_tableware_collision.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out-root"
+      },
+      "native_options": [
+        "--out",
+        "--scenario-json",
+        "--physics-json",
+        "--out-dir",
+        "--engine",
+        "--device",
+        "--samples",
+        "--resolution",
+        "--mode",
+        "--out-root",
+        "--physics-python",
+        "--render-python",
+        "--blender",
+        "--duration-sec",
+        "--fps",
+        "--slow-motion",
+        "--preview-frame",
+        "--simulate-only",
+        "--render-only",
+        "--skip-existing",
+        "--dry-run",
+        "--verbose-render",
+        "--cases",
+        "--scenario-overrides-json",
+        "--remove-receiver"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {
+        "blender": "--blender"
+      },
+      "cases": [
+        "kitchen_tableware_collision_baseline",
+        "edit_heavy_driver",
+        "edit_fast_driver",
+        "edit_no_restitution",
+        "edit_remove_receiver",
+        "edit_frictionless_counter_timed"
+      ],
+      "python_runtime": null
+    }
+  },
+  "workflows": {
+    "batch_render": {
+      "file": "tools/render_queue.py",
+      "runtime": "python",
+      "python_runtime": null,
+      "output": {
+        "flag": "--out-root"
+      },
+      "native_options": [
+        "--out",
+        "--scenario-json",
+        "--physics-json",
+        "--out-dir",
+        "--engine",
+        "--device",
+        "--samples",
+        "--resolution",
+        "--mode",
+        "--out-root",
+        "--physics-python",
+        "--render-python",
+        "--blender",
+        "--duration-sec",
+        "--fps",
+        "--slow-motion",
+        "--preview-frame",
+        "--simulate-only",
+        "--render-only",
+        "--skip-existing",
+        "--dry-run",
+        "--verbose-render",
+        "--cases",
+        "--scenario-overrides-json",
+        "--remove-receiver",
+        "--count",
+        "--start-index",
+        "--seed-base"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {
+        "blender": "--blender"
+      },
+      "cases": [],
+      "description": "Randomised batch sampling on top of the scene builder."
+    }
+  },
+  "implementation_policy": "Scene physics, geometry, rendering and helper modules are included in the seven scene files; only reference common scripts and repository assets are external.",
+  "runtime_policy": "python_runtime is null on purpose: every entry runs in the interpreter that invokes it. Use --physics-python / --render-python / --blender to point at a specific environment instead of baking a machine path into the manifest.",
+  "implementation_files": [
+    "README.md",
+    "appearance/look_kitchen_tableware_collision.py",
+    "build_pcve_kitchen_tableware_collision.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "physics/runtime_support.py",
+    "physics/scene_geometry.py",
+    "physics/validate_kitchen_tableware_collision.py",
+    "render_kitchen_tableware_collision.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_kitchen_tableware_collision.py",
+    "tools/audit_kitchen_tableware_collision.py",
+    "tools/render_queue.py"
+  ]
+}

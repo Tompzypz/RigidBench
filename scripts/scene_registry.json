@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "scenes": [
+    {
+      "category": "rigid_rigid",
+      "scene": "ball_block_building",
+      "directory": "scripts/rigid_rigid/ball_block_building",
+      "manifest": "scripts/rigid_rigid/ball_block_building/entrypoints.json"
+    },
+    {
+      "category": "rigid_rigid",
+      "scene": "basketball_corner_rebound",
+      "directory": "scripts/rigid_rigid/basketball_corner_rebound",
+      "manifest": "scripts/rigid_rigid/basketball_corner_rebound/entrypoints.json"
+    },
+    {
+      "category": "rigid_rigid",
+      "scene": "chalk_box_stack",
+      "directory": "scripts/rigid_rigid/chalk_box_stack",
+      "manifest": "scripts/rigid_rigid/chalk_box_stack/entrypoints.json"
+    },
+    {
+      "category": "rigid_rigid",
+      "scene": "door_basketball_collision",
+      "directory": "scripts/rigid_rigid/door_basketball_collision",
+      "manifest": "scripts/rigid_rigid/door_basketball_collision/entrypoints.json"
+    },
+    {
+      "category": "rigid_rigid",
+      "scene": "flatbed_speed_bump",
+      "directory": "scripts/rigid_rigid/flatbed_speed_bump",
+      "manifest": "scripts/rigid_rigid/flatbed_speed_bump/entrypoints.json"
+    },
+    {
+      "category": "rigid_rigid",
+      "scene": "home_basketball_door",
+      "directory": "scripts/rigid_rigid/home_basketball_door",
+      "manifest": "scripts/rigid_rigid/home_basketball_door/entrypoints.json"
+    },
+    {
+      "category": "rigid_rigid",
+      "scene": "kitchen_can_collision",
+      "directory": "scripts/rigid_rigid/kitchen_can_collision",
+      "manifest": "scripts/rigid_rigid/kitchen_can_collision/entrypoints.json"
+    },
+    {
+      "category": "rigid_rigid",
+      "scene": "kitchen_tableware_collision",
+      "directory": "scripts/rigid_rigid/kitchen_tableware_collision",
+      "manifest": "scripts/rigid_rigid/kitchen_tableware_collision/entrypoints.json"
+    },
+    {
+      "category": "rigid_rigid",
+      "scene": "newtons_cradle",
+      "directory": "scripts/rigid_rigid/newtons_cradle",
+      "manifest": "scripts/rigid_rigid/newtons_cradle/entrypoints.json"
+    },
+    {
+      "category": "rigid_rigid",
+      "scene": "pendulum_box_collision",
+      "directory": "scripts/rigid_rigid/pendulum_box_collision",
+      "manifest": "scripts/rigid_rigid/pendulum_box_collision/entrypoints.json"
+    },
+    {
+      "category": "rigid_rigid",
+      "scene": "pool_break",
+      "directory": "scripts/rigid_rigid/pool_break",
+      "manifest": "scripts/rigid_rigid/pool_break/entrypoints.json"
+    },
+    {
+      "category": "rigid_rigid",
+      "scene": "pot_lid_drop",
+      "directory": "scripts/rigid_rigid/pot_lid_drop",
+      "manifest": "scripts/rigid_rigid/pot_lid_drop/entrypoints.json"
+    },
+    {
+      "category": "rigid_rigid",
+      "scene": "soccer_ball_collision",
+      "directory": "scripts/rigid_rigid/soccer_ball_collision",
+      "manifest": "scripts/rigid_rigid/soccer_ball_collision/entrypoints.json"
+    },
+    {
+      "category": "rigid_rigid",
+      "scene": "soccer_step_collision",
+      "directory": "scripts/rigid_rigid/soccer_step_collision",
+      "manifest": "scripts/rigid_rigid/soccer_step_collision/entrypoints.json"
+    },
+    {
+      "category": "rigid_rigid",
+      "scene": "tennis_bottle_collision",
+      "directory": "scripts/rigid_rigid/tennis_bottle_collision",
+      "manifest": "scripts/rigid_rigid/tennis_bottle_collision/entrypoints.json"
+    },
+    {
+      "category": "rigid_rigid",
+      "scene": "toy_car_bottle",
+      "directory": "scripts/rigid_rigid/toy_car_bottle",
+      "manifest": "scripts/rigid_rigid/toy_car_bottle/entrypoints.json"
+    },
+    {
+      "category": "rigid_rigid",
+      "scene": "toy_car_collision",
+      "directory": "scripts/rigid_rigid/toy_car_collision",
+      "manifest": "scripts/rigid_rigid/toy_car_collision/entrypoints.json"
+    },
+    {
+      "category": "rigid_rigid",
+      "scene": "twin_pendulum_collision",
+      "directory": "scripts/rigid_rigid/twin_pendulum_collision",
+      "manifest": "scripts/rigid_rigid/twin_pendulum_collision/entrypoints.json"
+    },
+    {
+      "category": "rigid_rigid",
+      "scene": "u_track_ball",
+      "directory": "scripts/rigid_rigid/u_track_ball",
+      "manifest": "scripts/rigid_rigid/u_track_ball/entrypoints.json"
+    },
+    {
+      "category": "rigid_rigid",
+      "scene": "uneven_ground_ball",
+      "directory": "scripts/rigid_rigid/uneven_ground_ball",
+      "manifest": "scripts/rigid_rigid/uneven_ground_ball/entrypoints.json"
+    },
+    {
+      "category": "rigid_rigid",
+      "scene": "volleyball_corner_rebound",
+      "directory": "scripts/rigid_rigid/volleyball_corner_rebound",
+      "manifest": "scripts/rigid_rigid/volleyball_corner_rebound/entrypoints.json"
+    }
+  ]
+}

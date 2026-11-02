@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "scene": "twin_pendulum_collision",
+  "category": "rigid_rigid",
+  "directory": "scripts/rigid_rigid/twin_pendulum_collision",
+  "source_provenance": "clean_scripts/twin_pendulum_collision",
+  "canonical_entrypoints": {
+    "simulate": "simulate_twin_pendulum_collision.py",
+    "render": "render_twin_pendulum_collision.py",
+    "build_pcve": "build_pcve_twin_pendulum_collision.py"
+  },
+  "workflows": {
+    "batch_render": "tools/render_queue.py"
+  },
+  "modules": {
+    "scene_config": "scene_config.py",
+    "edit_vocab": "edit_vocab.py",
+    "physics": [
+      "physics/runtime_support.py",
+      "physics/scene_geometry.py",
+      "physics/validate_twin_pendulum_collision.py"
+    ],
+    "appearance": [
+      "appearance/look_twin_pendulum_collision.py"
+    ],
+    "tools": [
+      "tools/audit_twin_pendulum_collision.py",
+      "tools/render_queue.py"
+    ]
+  },
+  "cases": [
+    "twin_pendulum_collision_baseline",
+    "edit_heavy_driver",
+    "edit_large_amplitude",
+    "edit_high_drag",
+    "edit_remove_receiver",
+    "edit_remove_receiver_after_impact"
+  ],
+  "assets": {
+    "models": [],
+    "texture_sets": [
+      "newtons_cradle"
+    ],
+    "scenarios": []
+  },
+  "requirements": [],
+  "files": [
+    "README.md",
+    "appearance/look_twin_pendulum_collision.py",
+    "build_pcve_twin_pendulum_collision.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "physics/runtime_support.py",
+    "physics/scene_geometry.py",
+    "physics/validate_twin_pendulum_collision.py",
+    "render_twin_pendulum_collision.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_twin_pendulum_collision.py",
+    "tools/audit_twin_pendulum_collision.py",
+    "tools/render_queue.py"
+  ]
+}

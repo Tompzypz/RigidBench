@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "scene": "toy_car_bottle",
+  "category": "rigid_rigid",
+  "directory": "scripts/rigid_rigid/toy_car_bottle",
+  "source_provenance": "clean_scripts/toy_car_bottle",
+  "canonical_entrypoints": {
+    "simulate": "simulate_toy_car_bottle.py",
+    "render": "render_toy_car_bottle.py",
+    "build_pcve": "build_pcve_toy_car_bottle.py"
+  },
+  "workflows": {
+    "batch_render": "tools/render_queue.py"
+  },
+  "modules": {
+    "scene_config": "scene_config.py",
+    "edit_vocab": "edit_vocab.py",
+    "physics": [],
+    "appearance": [],
+    "tools": [
+      "tools/audit_toy_car_bottle.py",
+      "tools/render_queue.py"
+    ]
+  },
+  "cases": [
+    "toy_car_bottle_baseline",
+    "edit_heavy_bottle",
+    "edit_fast_car",
+    "edit_slippery_bottle",
+    "edit_add_midpoint_bottle",
+    "edit_fast_car_midflight"
+  ],
+  "assets": {
+    "models": [],
+    "texture_sets": [],
+    "scenarios": [
+      "toy_car_bottle"
+    ]
+  },
+  "requirements": [
+    "pybullet==3.2.7"
+  ],
+  "files": [
+    "README.md",
+    "build_pcve_toy_car_bottle.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "render_toy_car_bottle.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_toy_car_bottle.py",
+    "tools/audit_toy_car_bottle.py",
+    "tools/render_queue.py"
+  ]
+}

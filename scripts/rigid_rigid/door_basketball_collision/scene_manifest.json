@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "scene": "door_basketball_collision",
+  "category": "rigid_rigid",
+  "directory": "scripts/rigid_rigid/door_basketball_collision",
+  "source_provenance": "clean_scripts/door_basketball_collision",
+  "canonical_entrypoints": {
+    "simulate": "simulate_door_basketball_collision.py",
+    "render": "render_door_basketball_collision.py",
+    "build_pcve": "build_pcve_door_basketball_collision.py"
+  },
+  "workflows": {
+    "batch_render": "tools/render_queue.py"
+  },
+  "modules": {
+    "scene_config": "scene_config.py",
+    "edit_vocab": "edit_vocab.py",
+    "physics": [],
+    "appearance": [
+      "appearance/door_asset.py",
+      "appearance/pcve_blender_compat.py"
+    ],
+    "tools": [
+      "tools/audit_door_basketball_collision.py",
+      "tools/render_queue.py"
+    ]
+  },
+  "cases": [
+    "door_basketball_collision_baseline",
+    "edit_fast_door",
+    "edit_heavy_door",
+    "edit_heavy_ball",
+    "edit_remove_ball",
+    "edit_stiff_hinge_midway"
+  ],
+  "assets": {
+    "models": [],
+    "texture_sets": [],
+    "scenarios": []
+  },
+  "requirements": [
+    "pybullet==3.2.7"
+  ],
+  "files": [
+    "README.md",
+    "appearance/door_asset.py",
+    "appearance/pcve_blender_compat.py",
+    "build_pcve_door_basketball_collision.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "render_door_basketball_collision.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_door_basketball_collision.py",
+    "tools/audit_door_basketball_collision.py",
+    "tools/render_queue.py"
+  ]
+}

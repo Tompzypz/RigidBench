@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "scene": "pool_break",
+  "category": "rigid_rigid",
+  "directory": "scripts/rigid_rigid/pool_break",
+  "source_provenance": "clean_scripts/pool_break",
+  "canonical_entrypoints": {
+    "simulate": "simulate_pool_break.py",
+    "render": "render_pool_break.py",
+    "build_pcve": "build_pcve_pool_break.py"
+  },
+  "workflows": {
+    "batch_render": "tools/render_queue.py"
+  },
+  "modules": {
+    "scene_config": "scene_config.py",
+    "edit_vocab": "edit_vocab.py",
+    "physics": [
+      "physics/runtime_support.py",
+      "physics/validate_pool_break.py"
+    ],
+    "appearance": [
+      "appearance/props.py",
+      "appearance/table_model.py",
+      "appearance/wall_decor.py"
+    ],
+    "tools": [
+      "tools/audit_pool_break.py",
+      "tools/render_queue.py"
+    ]
+  },
+  "cases": [
+    "pool_break_baseline",
+    "edit_power_break",
+    "edit_cut_left",
+    "edit_cut_right",
+    "edit_light_cue",
+    "edit_dead_rack_timed"
+  ],
+  "assets": {
+    "models": [],
+    "texture_sets": [],
+    "scenarios": []
+  },
+  "requirements": [
+    "pybullet==3.2.7"
+  ],
+  "files": [
+    "README.md",
+    "appearance/props.py",
+    "appearance/table_model.py",
+    "appearance/wall_decor.py",
+    "build_pcve_pool_break.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "physics/runtime_support.py",
+    "physics/validate_pool_break.py",
+    "render_pool_break.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_pool_break.py",
+    "tools/audit_pool_break.py",
+    "tools/render_queue.py"
+  ]
+}

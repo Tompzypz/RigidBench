@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "scene": "tennis_bottle_collision",
+  "category": "rigid_rigid",
+  "entrypoints": {
+    "simulate": {
+      "file": "simulate_tennis_bottle_collision.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out",
+        "filename": "simulation.json"
+      },
+      "native_options": [
+        "--out",
+        "--scenario-json",
+        "--scenario-overrides-json",
+        "--initial-velocity",
+        "--bottle-mass",
+        "--bottle-restitution",
+        "--bottle-restitution"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [],
+      "python_runtime": null
+    },
+    "render": {
+      "file": "render_tennis_bottle_collision.py",
+      "runtime": "blender",
+      "output": {
+        "flag": "--out-dir"
+      },
+      "native_options": [
+        "--out",
+        "--out-dir",
+        "--physics-json",
+        "--physics-python",
+        "--engine",
+        "--device",
+        "--samples",
+        "--resolution",
+        "--mode",
+        "--preview-frame",
+        "--keyframes",
+        "--scenario-json",
+        "--scenario-overrides-json",
+        "--initial-velocity",
+        "--bottle-mass",
+        "--bottle-restitution",
+        "--bottle-restitution"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [],
+      "python_runtime": null
+    },
+    "build_pcve": {
+      "file": "build_pcve_tennis_bottle_collision.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out-root"
+      },
+      "native_options": [
+        "--out-root",
+        "--render-python",
+        "--blender",
+        "--simulate-only",
+        "--render-only",
+        "--samples",
+        "--resolution",
+        "--engine",
+        "--device",
+        "--mode",
+        "--cases",
+        "--keyframes",
+        "--preview-frame",
+        "--scenario-json",
+        "--out-dir",
+        "--physics-json",
+        "--scenario-overrides-json",
+        "--initial-velocity",
+        "--bottle-mass",
+        "--bottle-restitution",
+        "--bottle-restitution"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {
+        "blender": "--blender"
+      },
+      "cases": [
+        "tennis_bottle_collision_baseline",
+        "edit_fast_ball",
+        "edit_heavy_bottles",
+        "edit_remove_far_bottle",
+        "edit_add_lane_bottle",
+        "edit_dead_bottles_timed"
+      ],
+      "python_runtime": null
+    }
+  },
+  "workflows": {
+    "batch_render": {
+      "file": "tools/render_queue.py",
+      "runtime": "python",
+      "python_runtime": null,
+      "output": {
+        "flag": "--out-root"
+      },
+      "native_options": [
+        "--out-root",
+        "--render-python",
+        "--blender",
+        "--simulate-only",
+        "--render-only",
+        "--samples",
+        "--resolution",
+        "--engine",
+        "--device",
+        "--mode",
+        "--cases",
+        "--keyframes",
+        "--preview-frame",
+        "--scenario-json",
+        "--out-dir",
+        "--physics-json",
+        "--scenario-overrides-json",
+        "--initial-velocity",
+        "--bottle-mass",
+        "--bottle-restitution",
+        "--bottle-restitution",
+        "--count",
+        "--seed"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {
+        "blender": "--blender"
+      },
+      "cases": [],
+      "description": "Randomised batch sampling on top of the scene builder."
+    }
+  },
+  "implementation_policy": "Scene physics, geometry, rendering and helper modules are included in the seven scene files; only reference common scripts and repository assets are external.",
+  "runtime_policy": "python_runtime is null on purpose: every entry runs in the interpreter that invokes it. Use --physics-python / --render-python / --blender to point at a specific environment instead of baking a machine path into the manifest.",
+  "implementation_files": [
+    "README.md",
+    "appearance/look_tennis_bottle_collision.py",
+    "build_pcve_tennis_bottle_collision.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "physics/empty_bottle_geometry.py",
+    "physics/empty_bottle_validation.py",
+    "physics/runtime_support.py",
+    "physics/scene_geometry.py",
+    "physics/validate_tennis_bottle_collision.py",
+    "render_tennis_bottle_collision.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_tennis_bottle_collision.py",
+    "tools/audit_tennis_bottle_collision.py",
+    "tools/render_queue.py"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "scene": "basketball_corner_rebound",
+  "category": "rigid_rigid",
+  "directory": "scripts/rigid_rigid/basketball_corner_rebound",
+  "source_provenance": "clean_scripts/basketball_corner_rebound",
+  "canonical_entrypoints": {
+    "simulate": "simulate_basketball_corner_rebound.py",
+    "render": "render_basketball_corner_rebound.py",
+    "build_pcve": "build_pcve_basketball_corner_rebound.py"
+  },
+  "workflows": {
+    "batch_render": "tools/render_queue.py"
+  },
+  "modules": {
+    "scene_config": "scene_config.py",
+    "edit_vocab": "edit_vocab.py",
+    "physics": [],
+    "appearance": [
+      "appearance/look_basketball_corner_rebound.py"
+    ],
+    "tools": [
+      "tools/audit_basketball_corner_rebound.py",
+      "tools/render_queue.py"
+    ]
+  },
+  "cases": [
+    "basketball_corner_baseline",
+    "edit_fast_ball",
+    "edit_slow_ball",
+    "edit_slick_ball",
+    "edit_low_gravity",
+    "edit_spin_midway"
+  ],
+  "assets": {
+    "models": [],
+    "texture_sets": [],
+    "scenarios": []
+  },
+  "requirements": [
+    "pybullet==3.2.7"
+  ],
+  "files": [
+    "README.md",
+    "appearance/look_basketball_corner_rebound.py",
+    "build_pcve_basketball_corner_rebound.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "render_basketball_corner_rebound.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_basketball_corner_rebound.py",
+    "tools/audit_basketball_corner_rebound.py",
+    "tools/render_queue.py"
+  ]
+}

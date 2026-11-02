@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "scene": "newtons_cradle",
+  "category": "rigid_rigid",
+  "entrypoints": {
+    "simulate": {
+      "file": "simulate_newtons_cradle.py",
+      "runtime": "python",
+      "stage_semantics": "none",
+      "output": {
+        "flag": "--out",
+        "filename": "physics_transforms.json"
+      },
+      "native_options": [
+        "--out",
+        "--scenario-json",
+        "--scenario-overrides-json",
+        "--initial-height",
+        "--restitution",
+        "--fps",
+        "--duration-sec",
+        "--slow-motion"
+      ],
+      "python_runtime": null,
+      "resource_flags": {},
+      "cases": []
+    },
+    "render": {
+      "file": "render_newtons_cradle.py",
+      "runtime": "blender",
+      "stage_semantics": "none",
+      "output": {
+        "flag": "--out-dir"
+      },
+      "native_options": [
+        "--out-dir",
+        "--physics-json",
+        "--physics-python",
+        "--scenario-json",
+        "--scenario-overrides-json",
+        "--initial-height",
+        "--restitution",
+        "--fps",
+        "--duration-sec",
+        "--slow-motion",
+        "--engine",
+        "--device",
+        "--samples",
+        "--resolution",
+        "--mode",
+        "--preview-frame"
+      ],
+      "python_runtime": null,
+      "resource_flags": {},
+      "cases": []
+    },
+    "build_pcve": {
+      "file": "build_pcve_newtons_cradle.py",
+      "runtime": "python",
+      "stage_semantics": "none",
+      "resource_flags": {
+        "blender": "--blender",
+        "physics_python": "--physics-python",
+        "render_python": "--render-python"
+      },
+      "output": {
+        "flag": "--out-root"
+      },
+      "native_options": [
+        "--out-root",
+        "--physics-python",
+        "--render-python",
+        "--blender",
+        "--duration-sec",
+        "--fps",
+        "--slow-motion",
+        "--samples",
+        "--resolution",
+        "--engine",
+        "--device",
+        "--mode",
+        "--simulate-only",
+        "--render-only",
+        "--skip-existing",
+        "--cases",
+        "--dry-run",
+        "--verbose-render",
+        "--clean-stale-cases",
+        "--preview-frame"
+      ],
+      "python_runtime": null,
+      "cases": [
+        "source",
+        "edit_low_release",
+        "edit_high_release",
+        "delete_middle_ball",
+        "delete_inner_right_ball",
+        "edit_dead_bounce_timed"
+      ]
+    }
+  },
+  "workflows": {
+    "batch_render": {
+      "file": "tools/render_queue.py",
+      "runtime": "python",
+      "python_runtime": null,
+      "output": {
+        "flag": "--out-root"
+      },
+      "native_options": [
+        "--out-root",
+        "--physics-python",
+        "--render-python",
+        "--blender",
+        "--duration-sec",
+        "--fps",
+        "--slow-motion",
+        "--samples",
+        "--resolution",
+        "--engine",
+        "--device",
+        "--mode",
+        "--simulate-only",
+        "--render-only",
+        "--skip-existing",
+        "--cases",
+        "--dry-run",
+        "--verbose-render",
+        "--clean-stale-cases",
+        "--preview-frame",
+        "--count",
+        "--start-index",
+        "--seed-base"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {
+        "blender": "--blender"
+      },
+      "cases": [],
+      "description": "Randomised batch sampling on top of the scene builder."
+    }
+  },
+  "implementation_policy": "Scene physics, geometry, rendering and helper modules are included in the seven scene files; only reference common scripts and repository assets are external.",
+  "runtime_policy": "python_runtime is null on purpose: every entry runs in the interpreter that invokes it. Use --physics-python / --render-python / --blender to point at a specific environment instead of baking a machine path into the manifest.",
+  "implementation_files": [
+    "README.md",
+    "appearance/look_newtons_cradle.py",
+    "appearance/render_quality.py",
+    "build_pcve_newtons_cradle.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "physics/runtime_support.py",
+    "physics/scene_geometry.py",
+    "render_newtons_cradle.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_newtons_cradle.py",
+    "tools/audit_newtons_cradle.py",
+    "tools/render_queue.py"
+  ]
+}

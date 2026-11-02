@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "scene": "u_track_ball",
+  "category": "rigid_rigid",
+  "directory": "scripts/rigid_rigid/u_track_ball",
+  "source_provenance": "clean_scripts/u_track_ball",
+  "canonical_entrypoints": {
+    "simulate": "simulate_u_track_ball.py",
+    "render": "render_u_track_ball.py",
+    "build_pcve": "build_pcve_u_track_ball.py"
+  },
+  "workflows": {
+    "batch_render": "tools/render_queue.py"
+  },
+  "modules": {
+    "scene_config": "scene_config.py",
+    "edit_vocab": "edit_vocab.py",
+    "physics": [
+      "physics/runtime_support.py",
+      "physics/track_geometry.py"
+    ],
+    "appearance": [
+      "appearance/look_u_track_ball.py",
+      "appearance/visual_details.py"
+    ],
+    "tools": [
+      "tools/audit_u_track_ball.py",
+      "tools/render_queue.py"
+    ]
+  },
+  "cases": [
+    "u_track_ball_baseline",
+    "edit_lower_release",
+    "edit_shallow_release",
+    "edit_fast_launch",
+    "edit_heavy_ball",
+    "edit_box_vanishes_before_impact"
+  ],
+  "assets": {
+    "models": [],
+    "texture_sets": [],
+    "scenarios": []
+  },
+  "requirements": [
+    "pybullet==3.2.7"
+  ],
+  "files": [
+    "README.md",
+    "appearance/look_u_track_ball.py",
+    "appearance/visual_details.py",
+    "build_pcve_u_track_ball.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "physics/runtime_support.py",
+    "physics/track_geometry.py",
+    "render_u_track_ball.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_u_track_ball.py",
+    "tools/audit_u_track_ball.py",
+    "tools/render_queue.py"
+  ]
+}

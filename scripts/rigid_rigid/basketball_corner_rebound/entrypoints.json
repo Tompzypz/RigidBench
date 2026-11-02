@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "scene": "basketball_corner_rebound",
+  "category": "rigid_rigid",
+  "entrypoints": {
+    "simulate": {
+      "file": "simulate_basketball_corner_rebound.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out",
+        "filename": "simulation.json"
+      },
+      "native_options": [
+        "--out",
+        "--scenario-overrides-json"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "python_runtime": null,
+      "cases": []
+    },
+    "render": {
+      "file": "render_basketball_corner_rebound.py",
+      "runtime": "blender",
+      "output": {
+        "flag": "--out-dir"
+      },
+      "native_options": [
+        "--out-dir",
+        "--scenario-overrides-json",
+        "--mode",
+        "--keyframes",
+        "--resolution",
+        "--samples",
+        "--threads",
+        "--engine",
+        "--device",
+        "--out"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "python_runtime": null,
+      "cases": []
+    },
+    "build_pcve": {
+      "file": "build_pcve_basketball_corner_rebound.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out-root"
+      },
+      "native_options": [
+        "--out-root",
+        "--simulate-only",
+        "--mode",
+        "--only",
+        "--resolution",
+        "--samples",
+        "--engine",
+        "--device",
+        "--keyframes",
+        "--out-dir",
+        "--scenario-overrides-json"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [
+        "basketball_corner_baseline",
+        "edit_fast_ball",
+        "edit_slow_ball",
+        "edit_slick_ball",
+        "edit_low_gravity",
+        "edit_spin_midway"
+      ],
+      "python_runtime": null
+    }
+  },
+  "workflows": {
+    "batch_render": {
+      "file": "tools/render_queue.py",
+      "runtime": "python",
+      "python_runtime": null,
+      "output": {
+        "flag": "--out-root"
+      },
+      "native_options": [
+        "--out-root",
+        "--simulate-only",
+        "--mode",
+        "--only",
+        "--resolution",
+        "--samples",
+        "--engine",
+        "--device",
+        "--keyframes",
+        "--out-dir",
+        "--scenario-overrides-json"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [],
+      "description": "Randomised batch sampling on top of the scene builder."
+    }
+  },
+  "implementation_policy": "Scene physics, geometry, rendering and helper modules are included in the seven scene files; only reference common scripts and repository assets are external.",
+  "runtime_policy": "python_runtime is null on purpose: every entry runs in the interpreter that invokes it. Use --physics-python / --render-python / --blender to point at a specific environment instead of baking a machine path into the manifest.",
+  "implementation_files": [
+    "README.md",
+    "appearance/look_basketball_corner_rebound.py",
+    "build_pcve_basketball_corner_rebound.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "render_basketball_corner_rebound.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_basketball_corner_rebound.py",
+    "tools/audit_basketball_corner_rebound.py",
+    "tools/render_queue.py"
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "scene": "pot_lid_drop",
+  "category": "rigid_rigid",
+  "directory": "scripts/rigid_rigid/pot_lid_drop",
+  "source_provenance": "clean_scripts/pot_lid_drop",
+  "canonical_entrypoints": {
+    "simulate": "simulate_pot_lid_drop.py",
+    "render": "render_pot_lid_drop.py",
+    "build_pcve": "build_pcve_pot_lid_drop.py"
+  },
+  "workflows": {
+    "batch_render": "tools/render_queue.py"
+  },
+  "modules": {
+    "scene_config": "scene_config.py",
+    "edit_vocab": "edit_vocab.py",
+    "physics": [],
+    "appearance": [],
+    "tools": [
+      "tools/audit_pot_lid_drop.py",
+      "tools/render_queue.py"
+    ]
+  },
+  "cases": [
+    "pot_lid_drop_baseline",
+    "edit_light_gravity",
+    "edit_add_bowl_at_landing",
+    "edit_slick_rim",
+    "edit_bouncy_lid",
+    "edit_zero_gravity_timed"
+  ],
+  "assets": {
+    "models": [],
+    "texture_sets": [],
+    "scenarios": []
+  },
+  "requirements": [
+    "pybullet==3.2.7",
+    "numpy"
+  ],
+  "files": [
+    "README.md",
+    "build_pcve_pot_lid_drop.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "render_pot_lid_drop.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_pot_lid_drop.py",
+    "tools/audit_pot_lid_drop.py",
+    "tools/render_queue.py"
+  ]
+}

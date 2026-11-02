@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "scene": "volleyball_corner_rebound",
+  "category": "rigid_rigid",
+  "directory": "scripts/rigid_rigid/volleyball_corner_rebound",
+  "source_provenance": "clean_scripts/volleyball_corner_rebound",
+  "canonical_entrypoints": {
+    "simulate": "simulate_volleyball_corner_rebound.py",
+    "render": "render_volleyball_corner_rebound.py",
+    "build_pcve": "build_pcve_volleyball_corner_rebound.py"
+  },
+  "workflows": {
+    "batch_render": "tools/render_queue.py"
+  },
+  "modules": {
+    "scene_config": "scene_config.py",
+    "edit_vocab": "edit_vocab.py",
+    "physics": [
+      "physics/scene_geometry.py"
+    ],
+    "appearance": [
+      "appearance/camera_rig.py",
+      "appearance/look_volleyball_corner_rebound.py"
+    ],
+    "tools": [
+      "tools/audit_volleyball_corner_rebound.py",
+      "tools/render_queue.py"
+    ]
+  },
+  "cases": [
+    "volleyball_corner_rebound_baseline",
+    "edit_speed_x15",
+    "edit_restitution_x03",
+    "edit_friction_x05",
+    "edit_wall_restitution_x04",
+    "edit_gravity_x25_at24"
+  ],
+  "assets": {
+    "models": [],
+    "texture_sets": [],
+    "scenarios": []
+  },
+  "requirements": [
+    "pybullet==3.2.7"
+  ],
+  "files": [
+    "README.md",
+    "appearance/camera_rig.py",
+    "appearance/look_volleyball_corner_rebound.py",
+    "build_pcve_volleyball_corner_rebound.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "physics/scene_geometry.py",
+    "render_volleyball_corner_rebound.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_volleyball_corner_rebound.py",
+    "tools/audit_volleyball_corner_rebound.py",
+    "tools/render_queue.py"
+  ]
+}

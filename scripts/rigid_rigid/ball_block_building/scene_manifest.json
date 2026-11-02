@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "scene": "ball_block_building",
+  "category": "rigid_rigid",
+  "directory": "scripts/rigid_rigid/ball_block_building",
+  "source_provenance": "clean_scripts/ball_block_building",
+  "canonical_entrypoints": {
+    "simulate": "simulate_ball_block_building.py",
+    "render": "render_ball_block_building.py",
+    "build_pcve": "build_pcve_ball_block_building.py"
+  },
+  "workflows": {
+    "batch_render": "tools/render_queue.py"
+  },
+  "modules": {
+    "scene_config": "scene_config.py",
+    "edit_vocab": "edit_vocab.py",
+    "physics": [
+      "physics/building_geometry.py",
+      "physics/runtime_support.py"
+    ],
+    "appearance": [
+      "appearance/look_ball_block_building.py",
+      "appearance/render_quality.py"
+    ],
+    "tools": [
+      "tools/audit_ball_block_building.py",
+      "tools/render_queue.py"
+    ]
+  },
+  "cases": [
+    "ball_block_building_baseline",
+    "edit_heavy_ball",
+    "edit_fast_ball",
+    "edit_low_block_friction",
+    "delete_block_01",
+    "edit_stronger_gravity_timed"
+  ],
+  "assets": {
+    "models": [
+      "building_block_building.glb",
+      "tennis_ball.glb"
+    ],
+    "texture_sets": [],
+    "scenarios": []
+  },
+  "requirements": [
+    "pybullet==3.2.7"
+  ],
+  "files": [
+    "README.md",
+    "appearance/look_ball_block_building.py",
+    "appearance/render_quality.py",
+    "build_pcve_ball_block_building.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "physics/building_geometry.py",
+    "physics/runtime_support.py",
+    "render_ball_block_building.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_ball_block_building.py",
+    "tools/audit_ball_block_building.py",
+    "tools/render_queue.py"
+  ]
+}

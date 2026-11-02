@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "scene": "toy_car_bottle",
+  "category": "rigid_rigid",
+  "entrypoints": {
+    "simulate": {
+      "file": "simulate_toy_car_bottle.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out",
+        "filename": "physics_transforms.json"
+      },
+      "native_options": [
+        "--out",
+        "--scenario-overrides-json",
+        "--fps",
+        "--duration-sec"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [],
+      "python_runtime": null
+    },
+    "render": {
+      "file": "render_toy_car_bottle.py",
+      "runtime": "blender",
+      "output": {
+        "flag": "--out-dir"
+      },
+      "native_options": [
+        "--mode",
+        "--out-dir",
+        "--models-dir",
+        "--scenario-overrides-json",
+        "--physics-python",
+        "--resolution",
+        "--fps",
+        "--duration-sec",
+        "--samples",
+        "--frames",
+        "--end-frame",
+        "--out"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [],
+      "python_runtime": null
+    },
+    "build_pcve": {
+      "file": "build_pcve_toy_car_bottle.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out-root"
+      },
+      "native_options": [],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [
+        "toy_car_bottle_baseline",
+        "edit_heavy_bottle",
+        "edit_fast_car",
+        "edit_slippery_bottle",
+        "edit_add_midpoint_bottle",
+        "edit_fast_car_midflight"
+      ],
+      "python_runtime": null
+    }
+  },
+  "workflows": {
+    "batch_render": {
+      "file": "tools/render_queue.py",
+      "runtime": "python",
+      "python_runtime": null,
+      "output": {
+        "flag": "--out-root"
+      },
+      "native_options": [
+        "--out-root",
+        "--resolution",
+        "--fps",
+        "--duration-sec",
+        "--samples",
+        "--engine",
+        "--mode",
+        "--skip-existing",
+        "--dry-run",
+        "--verbose-render",
+        "--simulate-only",
+        "--count",
+        "--start-index",
+        "--seed-base",
+        "--cases",
+        "--clean-stale-cases"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [],
+      "description": "Randomised batch sampling on top of the scene builder."
+    }
+  },
+  "implementation_policy": "Scene physics and render logic are contained in the seven scene files; only reference common scripts and repository assets are external.",
+  "runtime_policy": "python_runtime is null on purpose: every entry runs in the interpreter that invokes it. Use --physics-python / --render-python / --blender to point at a specific environment instead of baking a machine path into the manifest.",
+  "implementation_files": [
+    "README.md",
+    "build_pcve_toy_car_bottle.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "render_toy_car_bottle.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_toy_car_bottle.py",
+    "tools/audit_toy_car_bottle.py",
+    "tools/render_queue.py"
+  ]
+}

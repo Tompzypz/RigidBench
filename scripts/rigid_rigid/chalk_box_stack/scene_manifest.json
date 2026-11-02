@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "scene": "chalk_box_stack",
+  "category": "rigid_rigid",
+  "directory": "scripts/rigid_rigid/chalk_box_stack",
+  "source_provenance": "clean_scripts/chalk_box_stack",
+  "canonical_entrypoints": {
+    "simulate": "simulate_chalk_box_stack.py",
+    "render": "render_chalk_box_stack.py",
+    "build_pcve": "build_pcve_chalk_box_stack.py"
+  },
+  "workflows": {
+    "batch_render": "tools/render_queue.py"
+  },
+  "modules": {
+    "scene_config": "scene_config.py",
+    "edit_vocab": "edit_vocab.py",
+    "physics": [
+      "physics/motion_analysis.py",
+      "physics/runtime_support.py",
+      "physics/scene_geometry.py",
+      "physics/tail_analysis.py",
+      "physics/validate_chalk_box_stack.py"
+    ],
+    "appearance": [
+      "appearance/look_chalk_box_stack.py",
+      "appearance/render_quality.py"
+    ],
+    "tools": [
+      "tools/audit_chalk_box_stack.py",
+      "tools/render_queue.py"
+    ]
+  },
+  "cases": [
+    "chalk_box_stack_baseline",
+    "edit_fast_eraser",
+    "edit_slow_eraser",
+    "edit_slick_eraser",
+    "edit_slippery_boxes",
+    "edit_frictionless_midway"
+  ],
+  "assets": {
+    "models": [],
+    "texture_sets": [],
+    "scenarios": []
+  },
+  "requirements": [
+    "pybullet==3.2.7"
+  ],
+  "files": [
+    "README.md",
+    "appearance/look_chalk_box_stack.py",
+    "appearance/render_quality.py",
+    "build_pcve_chalk_box_stack.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "physics/motion_analysis.py",
+    "physics/runtime_support.py",
+    "physics/scene_geometry.py",
+    "physics/tail_analysis.py",
+    "physics/validate_chalk_box_stack.py",
+    "render_chalk_box_stack.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_chalk_box_stack.py",
+    "tools/audit_chalk_box_stack.py",
+    "tools/render_queue.py"
+  ]
+}

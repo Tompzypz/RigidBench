@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "scene": "flatbed_speed_bump",
+  "category": "rigid_rigid",
+  "directory": "scripts/rigid_rigid/flatbed_speed_bump",
+  "source_provenance": "clean_scripts/flatbed_speed_bump",
+  "canonical_entrypoints": {
+    "simulate": "simulate_flatbed_speed_bump.py",
+    "render": "render_flatbed_speed_bump.py",
+    "build_pcve": "build_pcve_flatbed_speed_bump.py"
+  },
+  "workflows": {
+    "batch_render": "tools/render_queue.py"
+  },
+  "modules": {
+    "scene_config": "scene_config.py",
+    "edit_vocab": "edit_vocab.py",
+    "physics": [
+      "physics/runtime_support.py",
+      "physics/validate_flatbed_speed_bump.py"
+    ],
+    "appearance": [
+      "appearance/import_props.py",
+      "appearance/import_truck.py"
+    ],
+    "tools": [
+      "tools/audit_flatbed_speed_bump.py",
+      "tools/render_queue.py"
+    ]
+  },
+  "cases": [
+    "flatbed_speed_bump_baseline",
+    "edit_fast_truck",
+    "edit_low_bump",
+    "edit_high_bump",
+    "edit_slippery_cargo",
+    "edit_brake_before_bump"
+  ],
+  "assets": {
+    "models": [
+      "flatbed_unity3d.glb"
+    ],
+    "texture_sets": [],
+    "scenarios": []
+  },
+  "requirements": [
+    "pybullet==3.2.7"
+  ],
+  "files": [
+    "README.md",
+    "appearance/import_props.py",
+    "appearance/import_truck.py",
+    "build_pcve_flatbed_speed_bump.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "physics/runtime_support.py",
+    "physics/validate_flatbed_speed_bump.py",
+    "render_flatbed_speed_bump.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_flatbed_speed_bump.py",
+    "tools/audit_flatbed_speed_bump.py",
+    "tools/render_queue.py"
+  ]
+}

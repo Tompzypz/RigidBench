@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "scene": "newtons_cradle",
+  "category": "rigid_rigid",
+  "directory": "scripts/rigid_rigid/newtons_cradle",
+  "source_provenance": "clean_scripts/newtons_cradle",
+  "canonical_entrypoints": {
+    "simulate": "simulate_newtons_cradle.py",
+    "render": "render_newtons_cradle.py",
+    "build_pcve": "build_pcve_newtons_cradle.py"
+  },
+  "workflows": {
+    "batch_render": "tools/render_queue.py"
+  },
+  "modules": {
+    "scene_config": "scene_config.py",
+    "edit_vocab": "edit_vocab.py",
+    "physics": [
+      "physics/runtime_support.py",
+      "physics/scene_geometry.py"
+    ],
+    "appearance": [
+      "appearance/look_newtons_cradle.py",
+      "appearance/render_quality.py"
+    ],
+    "tools": [
+      "tools/audit_newtons_cradle.py",
+      "tools/render_queue.py"
+    ]
+  },
+  "cases": [
+    "source",
+    "edit_low_release",
+    "edit_high_release",
+    "delete_middle_ball",
+    "delete_inner_right_ball",
+    "edit_dead_bounce_timed"
+  ],
+  "assets": {
+    "models": [],
+    "texture_sets": [],
+    "scenarios": []
+  },
+  "requirements": [
+    "pybullet==3.2.7"
+  ],
+  "files": [
+    "README.md",
+    "appearance/look_newtons_cradle.py",
+    "appearance/render_quality.py",
+    "build_pcve_newtons_cradle.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "physics/runtime_support.py",
+    "physics/scene_geometry.py",
+    "render_newtons_cradle.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_newtons_cradle.py",
+    "tools/audit_newtons_cradle.py",
+    "tools/render_queue.py"
+  ]
+}

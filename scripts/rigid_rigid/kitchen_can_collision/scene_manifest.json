@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "scene": "kitchen_can_collision",
+  "category": "rigid_rigid",
+  "directory": "scripts/rigid_rigid/kitchen_can_collision",
+  "source_provenance": "clean_scripts/kitchen_can_collision",
+  "canonical_entrypoints": {
+    "simulate": "simulate_kitchen_can_collision.py",
+    "render": "render_kitchen_can_collision.py",
+    "build_pcve": "build_pcve_kitchen_can_collision.py"
+  },
+  "workflows": {
+    "batch_render": "tools/render_queue.py"
+  },
+  "modules": {
+    "scene_config": "scene_config.py",
+    "edit_vocab": "edit_vocab.py",
+    "physics": [
+      "physics/runtime_support.py",
+      "physics/scene_geometry.py",
+      "physics/validate_kitchen_can_collision.py"
+    ],
+    "appearance": [
+      "appearance/look_kitchen_can_collision.py",
+      "appearance/survey_camera.py",
+      "appearance/tabletop_props.py"
+    ],
+    "tools": [
+      "tools/audit_kitchen_can_collision.py",
+      "tools/render_queue.py"
+    ]
+  },
+  "cases": [
+    "kitchen_can_collision_baseline",
+    "edit_heavy_driver",
+    "edit_heavy_receiver",
+    "edit_remove_receiver",
+    "edit_rough_cans",
+    "edit_slippery_table"
+  ],
+  "assets": {
+    "models": [],
+    "texture_sets": [],
+    "scenarios": []
+  },
+  "requirements": [
+    "pybullet==3.2.7"
+  ],
+  "files": [
+    "README.md",
+    "appearance/look_kitchen_can_collision.py",
+    "appearance/survey_camera.py",
+    "appearance/tabletop_props.py",
+    "build_pcve_kitchen_can_collision.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "physics/runtime_support.py",
+    "physics/scene_geometry.py",
+    "physics/validate_kitchen_can_collision.py",
+    "render_kitchen_can_collision.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_kitchen_can_collision.py",
+    "tools/audit_kitchen_can_collision.py",
+    "tools/render_queue.py"
+  ]
+}

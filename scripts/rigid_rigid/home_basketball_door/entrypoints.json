@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "scene": "home_basketball_door",
+  "category": "rigid_rigid",
+  "entrypoints": {
+    "simulate": {
+      "file": "simulate_home_basketball_door.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out",
+        "filename": "physics_transforms.json"
+      },
+      "native_options": [
+        "--out",
+        "--scenario",
+        "--scenario-overrides-json",
+        "--door-leaf-json",
+        "--fps",
+        "--duration-sec",
+        "--substeps"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [],
+      "python_runtime": null
+    },
+    "render": {
+      "file": "render_home_basketball_door.py",
+      "runtime": "blender",
+      "output": {
+        "flag": "--out-dir"
+      },
+      "native_options": [
+        "--mode",
+        "--out-dir",
+        "--models-dir",
+        "--scenario",
+        "--scenario-overrides-json",
+        "--physics-python",
+        "--resolution",
+        "--fps",
+        "--duration-sec",
+        "--samples",
+        "--device",
+        "--keyframes",
+        "--out",
+        "--door-leaf-json"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [],
+      "python_runtime": null
+    },
+    "build_pcve": {
+      "file": "build_pcve_home_basketball_door.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out-root"
+      },
+      "native_options": [
+        "--out-root",
+        "--render-python",
+        "--resolution",
+        "--fps",
+        "--duration-sec",
+        "--samples",
+        "--device",
+        "--only",
+        "--mode",
+        "--skip-existing",
+        "--dry-run",
+        "--verbose-render",
+        "--clean-stale-cases",
+        "--mode",
+        "--out-dir",
+        "--physics-python",
+        "--scenario-overrides-json"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [
+        "home_basketball_door_baseline",
+        "edit_light_ball",
+        "edit_heavy_door",
+        "edit_stiff_hinge",
+        "edit_slow_throw",
+        "edit_stiff_hinge_late"
+      ],
+      "python_runtime": null
+    }
+  },
+  "workflows": {
+    "batch_render": {
+      "file": "tools/render_queue.py",
+      "runtime": "python",
+      "python_runtime": null,
+      "output": {
+        "flag": "--out-root"
+      },
+      "native_options": [
+        "--out-root",
+        "--render-python",
+        "--resolution",
+        "--fps",
+        "--duration-sec",
+        "--samples",
+        "--device",
+        "--only",
+        "--mode",
+        "--skip-existing",
+        "--dry-run",
+        "--verbose-render",
+        "--clean-stale-cases",
+        "--mode",
+        "--out-dir",
+        "--physics-python",
+        "--scenario-overrides-json"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [],
+      "description": "Randomised batch sampling on top of the scene builder."
+    }
+  },
+  "implementation_policy": "Scene physics, geometry, rendering and helper modules are included in the seven scene files; only reference common scripts and repository assets are external.",
+  "runtime_policy": "python_runtime is null on purpose: every entry runs in the interpreter that invokes it. Use --physics-python / --render-python / --blender to point at a specific environment instead of baking a machine path into the manifest.",
+  "implementation_files": [
+    "README.md",
+    "appearance/door_asset.py",
+    "build_pcve_home_basketball_door.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "render_home_basketball_door.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_home_basketball_door.py",
+    "tools/audit_home_basketball_door.py",
+    "tools/render_queue.py"
+  ]
+}

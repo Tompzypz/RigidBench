@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "scene": "pot_lid_drop",
+  "category": "rigid_rigid",
+  "entrypoints": {
+    "simulate": {
+      "file": "simulate_pot_lid_drop.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out",
+        "filename": "physics_transforms.json"
+      },
+      "native_options": [
+        "--out",
+        "--scenario",
+        "--scenario-overrides-json",
+        "--lid-hull-json",
+        "--fps",
+        "--duration-sec",
+        "--substeps"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [],
+      "python_runtime": null
+    },
+    "render": {
+      "file": "render_pot_lid_drop.py",
+      "runtime": "blender",
+      "output": {
+        "flag": "--out-dir"
+      },
+      "native_options": [
+        "--mode",
+        "--out-dir",
+        "--models-dir",
+        "--scenario",
+        "--scenario-overrides-json",
+        "--physics-python",
+        "--resolution",
+        "--fps",
+        "--duration-sec",
+        "--samples",
+        "--device",
+        "--keyframes",
+        "--out",
+        "--lid-hull-json"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [],
+      "python_runtime": null
+    },
+    "build_pcve": {
+      "file": "build_pcve_pot_lid_drop.py",
+      "runtime": "python",
+      "output": {
+        "flag": "--out-root"
+      },
+      "native_options": [
+        "--out-root",
+        "--render-python",
+        "--resolution",
+        "--fps",
+        "--duration-sec",
+        "--samples",
+        "--device",
+        "--skip-existing",
+        "--dry-run",
+        "--verbose-render",
+        "--clean-stale-cases",
+        "--mode",
+        "--out-dir",
+        "--scenario-overrides-json"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [
+        "pot_lid_drop_baseline",
+        "edit_light_gravity",
+        "edit_add_bowl_at_landing",
+        "edit_slick_rim",
+        "edit_bouncy_lid",
+        "edit_zero_gravity_timed"
+      ],
+      "python_runtime": null
+    }
+  },
+  "workflows": {
+    "batch_render": {
+      "file": "tools/render_queue.py",
+      "runtime": "python",
+      "python_runtime": null,
+      "output": {
+        "flag": "--out-root"
+      },
+      "native_options": [
+        "--out-root",
+        "--render-python",
+        "--resolution",
+        "--fps",
+        "--duration-sec",
+        "--samples",
+        "--device",
+        "--skip-existing",
+        "--dry-run",
+        "--verbose-render",
+        "--clean-stale-cases",
+        "--mode",
+        "--out-dir",
+        "--scenario-overrides-json"
+      ],
+      "stage_semantics": "none",
+      "resource_flags": {},
+      "cases": [],
+      "description": "Randomised batch sampling on top of the scene builder."
+    }
+  },
+  "implementation_policy": "Scene physics, geometry, rendering and helper modules are included in the seven scene files; only reference common scripts and repository assets are external.",
+  "runtime_policy": "python_runtime is null on purpose: every entry runs in the interpreter that invokes it. Use --physics-python / --render-python / --blender to point at a specific environment instead of baking a machine path into the manifest.",
+  "implementation_files": [
+    "README.md",
+    "build_pcve_pot_lid_drop.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "render_pot_lid_drop.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_pot_lid_drop.py",
+    "tools/audit_pot_lid_drop.py",
+    "tools/render_queue.py"
+  ]
+}

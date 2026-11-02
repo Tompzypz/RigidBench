@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "scene": "soccer_ball_collision",
+  "category": "rigid_rigid",
+  "directory": "scripts/rigid_rigid/soccer_ball_collision",
+  "source_provenance": "clean_scripts/soccer_ball_collision",
+  "canonical_entrypoints": {
+    "simulate": "simulate_soccer_ball_collision.py",
+    "render": "render_soccer_ball_collision.py",
+    "build_pcve": "build_pcve_soccer_ball_collision.py"
+  },
+  "workflows": {
+    "batch_render": "tools/render_queue.py"
+  },
+  "modules": {
+    "scene_config": "scene_config.py",
+    "edit_vocab": "edit_vocab.py",
+    "physics": [
+      "physics/runtime_support.py",
+      "physics/scene_geometry.py",
+      "physics/validate_soccer_ball_collision.py"
+    ],
+    "appearance": [
+      "appearance/look_soccer_ball_collision.py"
+    ],
+    "tools": [
+      "tools/audit_soccer_ball_collision.py",
+      "tools/render_queue.py"
+    ]
+  },
+  "cases": [
+    "soccer_ball_collision_baseline",
+    "edit_fast_driver",
+    "edit_heavy_receiver",
+    "edit_dead_receiver",
+    "edit_add_midpoint_ball",
+    "edit_overspin_receiver_timed",
+    "edit_dsl",
+    "edit_summary"
+  ],
+  "assets": {
+    "models": [
+      "cheap_soccer_ball.glb"
+    ],
+    "texture_sets": [],
+    "scenarios": []
+  },
+  "requirements": [
+    "pybullet==3.2.7"
+  ],
+  "files": [
+    "README.md",
+    "appearance/look_soccer_ball_collision.py",
+    "build_pcve_soccer_ball_collision.py",
+    "edit_vocab.py",
+    "entrypoints.json",
+    "physics/runtime_support.py",
+    "physics/scene_geometry.py",
+    "physics/validate_soccer_ball_collision.py",
+    "render_soccer_ball_collision.py",
+    "requirements.txt",
+    "scene_config.py",
+    "scene_manifest.json",
+    "simulate_soccer_ball_collision.py",
+    "tools/audit_soccer_ball_collision.py",
+    "tools/render_queue.py"
+  ]
+}
